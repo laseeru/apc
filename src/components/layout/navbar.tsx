@@ -49,11 +49,12 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16 lg:h-20">
           <Link
             href="/"
-            className={`flex items-center gap-2 font-heading font-bold text-xl transition-colors ${
-              isScrolled ? "" : "[&_img]:brightness-0 [&_img]:invert"
+            className={`flex items-center gap-3 font-heading font-bold text-xl transition-colors ${
+              isScrolled ? "text-navy-700" : "text-white [&_img]:brightness-0 [&_img]:invert"
             }`}
           >
-            <img src="/logo_apc.png" alt="APC-ELI" className="h-8 w-auto" />
+            <img src="/logo_apc.png" alt="APC-ELI" className="h-9 w-auto" />
+            <span className="hidden sm:inline">APC-ELI</span>
           </Link>
 
           <div className="hidden lg:flex items-center gap-1">

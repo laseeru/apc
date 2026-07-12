@@ -20,11 +20,15 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-8">
-            <img src="/logo_apc.png" alt="APC-ELI" className="h-8 w-auto" />
-            <span className="text-white/80 text-sm font-medium uppercase tracking-wider">
-              APC-ELI
-            </span>
+          <div className="mb-10">
+            <div className="relative inline-flex items-center justify-center">
+              <div className="absolute inset-0 bg-accent/10 blur-3xl rounded-full" />
+              <img
+                src="/logo_apc.png"
+                alt="APC-ELI"
+                className="relative h-28 sm:h-32 md:h-36 w-auto drop-shadow-2xl brightness-110 contrast-110"
+              />
+            </div>
           </div>
         </motion.div>
 
