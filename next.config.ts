@@ -3,6 +3,13 @@ import createNextIntlPlugin from "next-intl/plugin";
 
 const withNextIntl = createNextIntlPlugin();
 
-const nextConfig: NextConfig = {};
+import path from "path";
+
+const nextConfig: NextConfig = {
+  outputFileTracingRoot: path.join(__dirname, "../../"),
+  images: {
+    unoptimized: true,
+  },
+};
 
 export default withNextIntl(nextConfig);
