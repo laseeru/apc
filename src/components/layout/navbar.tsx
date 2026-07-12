@@ -6,6 +6,7 @@ import { Menu, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { LanguageSwitcher } from "./language-switcher";
 import { Link, usePathname } from "@/i18n/navigation";
+import { Logo } from "@/components/shared/logo";
 
 const navItems = [
   { key: "home", href: "/" },
@@ -49,12 +50,9 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16 lg:h-20">
           <Link
             href="/"
-            className={`flex items-center gap-3 font-heading font-bold text-xl transition-colors ${
-              isScrolled ? "text-navy-700" : "text-white [&_img]:brightness-0 [&_img]:invert"
-            }`}
+            className="flex items-center gap-3 shrink-0"
           >
-            <img src="/logo_apc.png" alt="APC-ELI" className="h-9 w-auto" />
-            <span className="hidden sm:inline">APC-ELI</span>
+            <Logo size="sm" />
           </Link>
 
           <div className="hidden lg:flex items-center gap-1">
@@ -81,7 +79,7 @@ export function Navbar() {
           </div>
 
           <div className="flex items-center gap-3 lg:hidden">
-            <LanguageSwitcher />
+            <LanguageSwitcher light={!isScrolled} />
             <button
               onClick={() => setIsOpen(!isOpen)}
               className={`p-2 rounded-lg transition-colors ${

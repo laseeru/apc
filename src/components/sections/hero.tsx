@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { ArrowRight, Users, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n/navigation";
+import { Logo } from "@/components/shared/logo";
 
 export function Hero() {
   const t = useTranslations("hero");
@@ -21,14 +22,7 @@ export function Hero() {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <div className="mb-10">
-            <div className="relative inline-flex items-center justify-center">
-              <div className="absolute inset-0 bg-accent/10 blur-3xl rounded-full" />
-              <img
-                src="/logo_apc.png"
-                alt="APC-ELI"
-                className="relative h-28 sm:h-32 md:h-36 w-auto drop-shadow-2xl brightness-110 contrast-110"
-              />
-            </div>
+            <Logo size="lg" />
           </div>
         </motion.div>
 

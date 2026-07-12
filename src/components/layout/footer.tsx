@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Mail, MapPin, Phone, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { Logo } from "@/components/shared/logo";
 
 const socialLinks = [
   { icon: Facebook, href: "#", label: "Facebook" },
@@ -28,9 +29,8 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div className="lg:col-span-1">
-            <Link href="/" className="flex items-center gap-3 mb-4">
-              <img src="/logo_apc.png" alt="APC-ELI" className="h-10 w-auto" />
-              <span className="font-heading font-bold text-xl text-white">APC-ELI</span>
+            <Link href="/" className="inline-block mb-4">
+              <Logo size="md" />
             </Link>
             <p className="text-sm leading-relaxed text-gray-400 mb-6">
               {t("footer.description")}
