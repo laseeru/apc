@@ -11,18 +11,36 @@ import "../globals.css";
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   const isEs = locale === "es";
+  const title = isEs
+    ? "APC-ELI | Asociación de Pedagogos de Cuba — Especialistas en Lengua Inglesa"
+    : "APC-ELI | Association of Pedagogues of Cuba — English Language Specialists";
+  const description = isEs
+    ? "APC-ELI es la Sección de Enseñanza de Inglés de la Asociación de Pedagogos de Cuba. Brindamos desarrollo profesional, becas IATEFL, conferencias y talleres para profesores de inglés en Cuba."
+    : "APC-ELI is the English Language Teaching Section of the Association of Pedagogues of Cuba. We provide professional development, IATEFL scholarships, conferences, and workshops for English teachers in Cuba.";
   return {
-    title: isEs ? "APC-ELI | Especialistas en Lengua Inglesa de la APC" : "APC-ELI | English Language Specialists of APC",
-    description: isEs
-      ? "Sección de especialistas en lengua inglesa de la Asociación de Pedagogos de Cuba"
-      : "English language specialists section of the Association of Pedagogues of Cuba",
+    title,
+    description,
+    metadataBase: new URL("https://apc-eli.vercel.app"),
     openGraph: {
-      title: isEs ? "APC-ELI | Especialistas en Lengua Inglesa de la APC" : "APC-ELI | English Language Specialists of APC",
-      description: isEs
-        ? "Sección de especialistas en lengua inglesa de la Asociación de Pedagogos de Cuba"
-        : "English language specialists section of the Association of Pedagogues of Cuba",
+      title,
+      description,
       type: "website",
       locale: isEs ? "es_ES" : "en_US",
+      siteName: "APC-ELI",
+      images: [
+        {
+          url: "/og-image.jpg",
+          width: 1200,
+          height: 630,
+          alt: "APC-ELI",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: ["/og-image.jpg"],
     },
   };
 }
