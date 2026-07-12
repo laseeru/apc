@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return {
     title,
     description,
-    metadataBase: new URL("https://apc-eli.vercel.app"),
+    metadataBase: new URL("https://apc-phi.vercel.app"),
     openGraph: {
       title,
       description,
