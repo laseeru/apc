@@ -64,6 +64,35 @@ export default function ConferencePage() {
         </div>
       </section>
 
+      <section className="pb-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <SectionHeader title={t("gallery.title")} />
+          <div className="grid md:grid-cols-3 gap-4">
+            <figure className="md:col-span-2 md:row-span-2">
+              <img
+                src="/images/events/7th-national-conference-santiago.jpg"
+                alt={t("gallery.santiago")}
+                className="w-full h-full object-cover rounded-2xl shadow-md"
+                loading="lazy"
+              />
+              <figcaption className="text-sm text-muted mt-2">{t("gallery.santiago")}</figcaption>
+            </figure>
+            <img
+              src="/images/activities/homage-juan-carlos-izaguirre.jpg"
+              alt=""
+              className="w-full aspect-[4/3] object-cover rounded-2xl shadow-md"
+              loading="lazy"
+            />
+            <img
+              src="/images/activities/conference-cd.jpg"
+              alt=""
+              className="w-full aspect-[4/3] object-cover rounded-2xl shadow-md"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 bg-soft-gray">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader title={t("previous.title")} />
@@ -78,7 +107,7 @@ export default function ConferencePage() {
                 className="bg-white rounded-xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-shadow text-center"
               >
                 <span className="text-3xl font-bold text-accent">{conf.year}</span>
-                <p className="text-sm text-accent font-medium mt-1">{conf.edition} Edition</p>
+                <p className="text-sm text-accent font-medium mt-1">{conf.edition} {t("edition")}</p>
                 <p className="text-navy-700 font-medium mt-2">{conf.theme}</p>
                 <p className="text-muted text-sm mt-1">{conf.location}</p>
               </motion.div>

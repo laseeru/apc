@@ -6,9 +6,9 @@ import { MotionWrapper, FadeIn } from "@/components/shared/motion-wrapper";
 import { EventCard } from "@/components/shared/event-card";
 import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
-import { CheckCircle, Calendar, MapPin } from "lucide-react";
-import { grantsData } from "@/data";
-import type { GrantOpportunity, GrantProject, WorkshopItem } from "@/data";
+import { CheckCircle, Calendar, MapPin, GraduationCap, Users } from "lucide-react";
+import { grantsData, supportedTeachers, supportedTeacherPhotos } from "@/data";
+import type { GrantOpportunity, GrantProject, GrantWorkshop, WorkshopItem } from "@/data";
 
 export default function GrantsWorkshopsPage() {
   const t = useTranslations("grants");
@@ -47,17 +47,75 @@ export default function GrantsWorkshopsPage() {
                 transition={{ delay: i * 0.08 }}
                 className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-lg transition-shadow"
               >
-                <Badge variant="accent" className="mb-3">
-                  {project.period}
-                </Badge>
+                {project.period && (
+                  <Badge variant="accent" className="mb-3">
+                    {project.period}
+                  </Badge>
+                )}
                 <h3 className="font-heading text-xl text-navy-700 mb-3">{project.name}</h3>
                 <p className="text-muted text-sm leading-relaxed mb-4">{project.description}</p>
-                <div className="flex items-start gap-2 text-sm font-medium text-accent">
-                  <CheckCircle className="w-4 h-4 mt-0.5 shrink-0" />
-                  <span>{project.impact}</span>
-                </div>
+                {project.impact && (
+                  <div className="flex items-start gap-2 text-sm font-medium text-accent mb-4">
+                    <CheckCircle className="w-4 h-4 mt-0.5 shrink-0" />
+                    <span>{project.impact}</span>
+                  </div>
+                )}
+                {project.images && (
+                  <div className="grid grid-cols-3 gap-2">
+                    {project.images.map((img) => (
+                      <figure key={img.src}>
+                        <img
+                          src={img.src}
+                          alt={img.caption}
+                          title={img.caption}
+                          className="w-full aspect-square object-cover rounded-lg"
+                          loading="lazy"
+                        />
+                      </figure>
+                    ))}
+                  </div>
+                )}
               </motion.div>
             ))}
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-8 mb-16">
+            <div className="bg-soft-gray rounded-2xl p-8">
+              <GraduationCap className="w-8 h-8 text-accent mb-3" />
+              <h3 className="font-heading text-2xl text-navy-700 mb-2">
+                {t("grantWorkshops.title")}
+              </h3>
+              <p className="text-muted mb-6">{t("grantWorkshops.description")}</p>
+              <ul className="space-y-3">
+                {data.grantWorkshops.map((w: GrantWorkshop) => (
+                  <li key={w.title} className="flex items-start gap-3 bg-white rounded-xl p-4 border border-gray-100">
+                    <CheckCircle className="w-5 h-5 text-accent mt-0.5 shrink-0" />
+                    <div>
+                      <p className="font-semibold text-navy-700">{w.title}</p>
+                      <p className="text-sm text-muted">{w.partner}</p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-heading text-2xl text-navy-700 mb-6">
+                {t("booklets.title")}
+              </h3>
+              <div className="grid grid-cols-2 gap-4">
+                {data.booklets.map((b, i) => (
+                  <figure key={b.src} className={i === 0 ? "col-span-2" : ""}>
+                    <img
+                      src={b.src}
+                      alt={b.caption}
+                      className={`w-full rounded-xl shadow-sm object-cover ${i === 0 ? "aspect-[16/9]" : "aspect-square"}`}
+                      loading="lazy"
+                    />
+                    <figcaption className="text-xs text-muted mt-2">{b.caption}</figcaption>
+                  </figure>
+                ))}
+              </div>
+            </div>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8 mb-12">
@@ -98,18 +156,54 @@ export default function GrantsWorkshopsPage() {
                     <p className="text-sm text-muted mb-3">{grant.description}</p>
                     <div className="flex items-center gap-2 text-sm text-accent mb-4">
                       <Calendar className="w-4 h-4" />
-                      Deadline: {grant.deadline}
+                      {t("deadline")}: {grant.deadline}
                     </div>
                     <a
                       href="mailto:apcelioficial@gmail.com"
                       className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium border border-gray-300 text-navy-700 hover:bg-navy-50 transition-colors"
                     >
-                      {t("applyNow") || "Apply Now"}
+                      {t("applyNow")}
                     </a>
                   </motion.div>
                 ))}
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-navy-800 text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <MotionWrapper>
+            <div className="text-center mb-10">
+              <Users className="w-10 h-10 text-accent mx-auto mb-4" />
+              <h2 className="font-heading text-3xl md:text-4xl mb-4">{t("supported.title")}</h2>
+              <p className="text-gray-300 text-lg max-w-3xl mx-auto leading-relaxed">
+                {t("supported.description")}
+              </p>
+            </div>
+          </MotionWrapper>
+          <div className="flex flex-wrap justify-center gap-2 mb-12 max-w-4xl mx-auto">
+            {supportedTeachers.map((name) => (
+              <span key={name} className="px-3 py-1.5 rounded-full bg-white/10 border border-white/20 text-sm">
+                {name}
+              </span>
+            ))}
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 max-w-5xl mx-auto">
+            {supportedTeacherPhotos.map((src, i) => (
+              <motion.img
+                key={src}
+                src={src}
+                alt={t("supported.title")}
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: (i % 3) * 0.05 }}
+                className="w-full aspect-[4/3] object-cover rounded-xl"
+                loading="lazy"
+              />
+            ))}
           </div>
         </div>
       </section>

@@ -5,19 +5,16 @@ import { motion } from "framer-motion";
 import { MotionWrapper, FadeIn } from "@/components/shared/motion-wrapper";
 import { CheckCircle, Target, Eye, Heart, Shield, Lightbulb, Globe } from "lucide-react";
 
-const timeline = [
-  { year: "2015", event: "APC-ELI se funda como sección de inglés de la Asociación de Pedagogos de Cuba / APC-ELI founded as English section of APC" },
-  { year: "2018", event: "Representación en la reunión de asociaciones de Lima, Perú / Representation at association meeting in Lima, Peru" },
-  { year: "2019", event: "Participación en IATEFL Liverpool representados por Eduardo Garbey y Liliana Casar / Participation at IATEFL Liverpool" },
-  { year: "2019", event: "Reunión semestral del ejecutivo: acuerdos sobre becas IATEFL y nueva representación provincial / Executive semi-annual meeting" },
-  { year: "2020", event: "5ta Conferencia Nacional APC-ELI: 10-11 de diciembre / 5th APC-ELI National Conference: December 10-11" },
-];
-
 const valueIcons = [Target, Globe, Lightbulb, Heart, Shield, CheckCircle];
 
 interface ValueItem {
   title: string;
   description: string;
+}
+
+interface JourneyItem {
+  year: string;
+  event: string;
 }
 
 export default function AboutPage() {
@@ -43,19 +40,24 @@ export default function AboutPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
             <MotionWrapper>
               <img
-                src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&h=600&fit=crop"
-                alt="APC-ELI history"
-                className="rounded-2xl shadow-lg"
+                src="/images/events/7th-national-conference-santiago.jpg"
+                alt={t("whatIs.title")}
+                className="rounded-2xl shadow-lg w-full aspect-[4/3] object-cover"
                 loading="lazy"
               />
             </MotionWrapper>
             <MotionWrapper delay={0.1}>
-              <h2 className="font-heading text-3xl text-navy-700 mb-4">
-                {t("history.title")}
+              <h2 className="font-heading text-3xl text-navy-700 mb-6">
+                {t("whatIs.title")}
               </h2>
-              <p className="text-muted text-lg leading-relaxed">
-                {t("history.content")}
-              </p>
+              <ul className="space-y-4">
+                {t.raw("whatIs.items").map((item: string, i: number) => (
+                  <li key={i} className="flex items-start gap-3 text-muted leading-relaxed">
+                    <CheckCircle className="w-5 h-5 text-accent mt-1 shrink-0" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
             </MotionWrapper>
           </div>
 
@@ -144,12 +146,12 @@ export default function AboutPage() {
       <section className="py-20 bg-soft-gray">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="font-heading text-3xl text-navy-700 mb-12 text-center">
-            Our Journey
+            {t("journey.title")}
           </h2>
           <div className="relative">
             <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-navy-200 -translate-x-1/2" />
             <div className="space-y-12">
-              {timeline.map((item, i) => (
+              {t.raw("journey.items").map((item: JourneyItem, i: number) => (
                 <motion.div
                   key={i}
                   initial={{ opacity: 0, x: i % 2 === 0 ? -30 : 30 }}

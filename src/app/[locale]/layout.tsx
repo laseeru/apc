@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { routing } from "@/i18n/routing";
 import { notFound } from "next/navigation";
@@ -13,7 +12,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const isEs = locale === "es";
   const title = isEs
     ? "APC-ELI | Asociación de Pedagogos de Cuba — Especialistas en Lengua Inglesa"
-    : "APC-ELI | Association of Pedagogues of Cuba — English Language Specialists";
+    : "APC-ELI | Association of Pedagogues of Cuba — English Language Teaching Specialists";
   const description = isEs
     ? "APC-ELI es la Sección de Enseñanza de Inglés de la Asociación de Pedagogos de Cuba. Brindamos desarrollo profesional, becas IATEFL, conferencias y talleres para profesores de inglés en Cuba."
     : "APC-ELI is the English Language Teaching Section of the Association of Pedagogues of Cuba. We provide professional development, IATEFL scholarships, conferences, and workshops for English teachers in Cuba.";

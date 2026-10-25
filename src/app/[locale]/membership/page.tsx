@@ -15,7 +15,8 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { membershipData } from "@/data/membership";
-import type { BenefitItem, TierItem, FaqItem } from "@/data/membership";
+import type { BenefitItem, FaqItem } from "@/data/membership";
+import { Link } from "@/i18n/navigation";
 
 const tierIcons = [School, User, Building2];
 
@@ -41,8 +42,8 @@ export default function MembershipPage() {
 
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeader title={t("benefits.title")} />
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
+          <SectionHeader title={t("benefits.title")} subtitle={t("benefits.intro")} />
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
             {data.benefits.map((benefit: BenefitItem, i: number) => (
               <MotionWrapper key={i} delay={i * 0.06}>
                 <div className="bg-soft-gray rounded-xl p-6 border border-gray-100 h-full">
@@ -87,13 +88,15 @@ export default function MembershipPage() {
                       </li>
                     ))}
                   </ul>
-                  <Button
-                    variant={i === 1 ? "accent" : "outline"}
-                    className="w-full gap-2"
-                  >
-                    {t("title")}
-                    <ArrowRight className="w-4 h-4" />
-                  </Button>
+                  <Link href="/contact">
+                    <Button
+                      variant={i === 1 ? "accent" : "outline"}
+                      className="w-full gap-2"
+                    >
+                      {t("title")}
+                      <ArrowRight className="w-4 h-4" />
+                    </Button>
+                  </Link>
                 </motion.div>
               );
             })}
@@ -137,10 +140,12 @@ export default function MembershipPage() {
         <div className="max-w-3xl mx-auto px-4">
           <h2 className="font-heading text-3xl mb-4">{t("title")}</h2>
           <p className="text-gray-400 mb-8">{t("subtitle")}</p>
-          <Button variant="accent" size="lg" className="gap-2">
-            {t("title")}
-            <ArrowRight className="w-4 h-4" />
-          </Button>
+          <Link href="/contact">
+            <Button variant="accent" size="lg" className="gap-2">
+              {t("title")}
+              <ArrowRight className="w-4 h-4" />
+            </Button>
+          </Link>
         </div>
       </section>
     </div>

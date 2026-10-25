@@ -1,23 +1,24 @@
 "use client";
 
 import { useState } from "react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { motion, AnimatePresence } from "framer-motion";
-import { SectionHeader } from "@/components/shared/section-header";
 import { MotionWrapper } from "@/components/shared/motion-wrapper";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import { galleryItems } from "@/data/gallery";
 
-const categories = ["all", "conferences", "workshops", "community"] as const;
+const categories = ["all", "conferences", "workshops", "community", "international"] as const;
 
 export default function GalleryPage() {
   const t = useTranslations("gallery");
+  const locale = useLocale() as "es" | "en";
   const [filter, setFilter] = useState<string>("all");
   const [lightbox, setLightbox] = useState<number | null>(null);
 
   const filtered = filter === "all"
     ? galleryItems
     : galleryItems.filter((item) => item.cat === filter);
+  const current = lightbox !== null ? filtered[lightbox] : null;
 
   return (
     <div className="pt-24">
@@ -40,7 +41,7 @@ export default function GalleryPage() {
             {categories.map((cat) => (
               <button
                 key={cat}
-                onClick={() => setFilter(cat)}
+                onClick={() => { setFilter(cat); setLightbox(null); }}
                 className={`px-5 py-2 rounded-full text-sm font-medium transition-all ${
                   filter === cat
                     ? "bg-accent text-white shadow-sm"
@@ -65,18 +66,18 @@ export default function GalleryPage() {
                   className="break-inside-avoid"
                 >
                   <button
-                    onClick={() => setLightbox(galleryItems.indexOf(item))}
+                    onClick={() => setLightbox(i)}
                     className="group relative w-full overflow-hidden rounded-xl shadow-sm hover:shadow-lg transition-all"
                   >
                     <img
                       src={item.src}
-                      alt={item.title}
+                      alt={item.title[locale]}
                       className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
                       loading="lazy"
                     />
                     <div className="absolute inset-0 bg-navy-900/0 group-hover:bg-navy-900/40 transition-colors flex items-end p-4">
                       <p className="text-white text-sm font-medium translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all">
-                        {item.title}
+                        {item.title[locale]}
                       </p>
                     </div>
                   </button>
@@ -88,7 +89,7 @@ export default function GalleryPage() {
       </section>
 
       <AnimatePresence>
-        {lightbox !== null && (
+        {lightbox !== null && current && (
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -114,7 +115,7 @@ export default function GalleryPage() {
               </button>
             )}
 
-            {lightbox < galleryItems.length - 1 && (
+            {lightbox < filtered.length - 1 && (
               <button
                 onClick={(e) => { e.stopPropagation(); setLightbox(lightbox + 1); }}
                 className="absolute right-4 p-2 text-white hover:text-gray-300 z-10"
@@ -129,14 +130,14 @@ export default function GalleryPage() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.9 }}
-              src={galleryItems[lightbox].src}
-              alt={galleryItems[lightbox].title}
+              src={current.src}
+              alt={current.title[locale]}
               className="max-w-full max-h-[85vh] object-contain rounded-lg"
               onClick={(e) => e.stopPropagation()}
             />
 
-            <p className="absolute bottom-4 text-white text-sm">
-              {galleryItems[lightbox].title}
+            <p className="absolute bottom-4 left-4 right-4 text-center text-white text-sm">
+              {current.title[locale]}
             </p>
           </motion.div>
         )}

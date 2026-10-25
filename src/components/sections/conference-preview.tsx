@@ -12,7 +12,7 @@ export function ConferencePreview() {
 
   return (
     <section className="py-20 bg-navy-800 text-white overflow-hidden relative">
-      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1920&q=80')] bg-cover bg-center opacity-10" />
+      <div className="absolute inset-0 bg-[url('/images/events/7th-national-conference-santiago.jpg')] bg-cover bg-center opacity-10" />
       <div className="absolute inset-0 bg-gradient-to-r from-navy-900 via-navy-800 to-navy-800/90" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -46,14 +46,14 @@ export function ConferencePreview() {
           <MotionWrapper delay={0.15}>
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop"
-                alt="Conference"
-                className="rounded-2xl shadow-2xl"
+                src="/images/events/7th-national-conference-santiago.jpg"
+                alt={t("title")}
+                className="rounded-2xl shadow-2xl w-full aspect-[4/3] object-cover"
                 loading="lazy"
               />
               <div className="absolute -top-4 -right-4 bg-accent text-white px-4 py-2 rounded-lg shadow-lg">
                 <span className="font-bold text-lg">VII</span>
-                <p className="text-xs">Edition</p>
+                <p className="text-xs">{t("edition")}</p>
               </div>
             </div>
           </MotionWrapper>

@@ -2,13 +2,17 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
+import { expertsData } from "@/data";
 import { SectionHeader } from "@/components/shared/section-header";
-import { Quote, ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export function Testimonials() {
   const t = useTranslations("testimonials");
   const items = t.raw("items");
+  const locale = useLocale();
+  const photoFor = (name: string) =>
+    expertsData[locale as "es" | "en"].find((e) => e.name === name)?.photo;
   const [current, setCurrent] = useState(0);
 
   const next = () => setCurrent((c) => (c + 1) % items.length);
@@ -29,24 +33,19 @@ export function Testimonials() {
               transition={{ duration: 0.3 }}
               className="bg-white rounded-2xl p-8 md:p-12 shadow-md border border-gray-100 text-center"
             >
-              <Quote className="w-10 h-10 text-accent/30 mx-auto mb-6" />
-              <p className="text-lg md:text-xl text-navy-700 leading-relaxed mb-8 italic">
-                &ldquo;{items[current].text}&rdquo;
+              <img
+                src={photoFor(items[current].name)}
+                alt={items[current].name}
+                className="w-28 h-28 rounded-full object-cover object-top mx-auto mb-5 ring-4 ring-accent/20"
+                loading="lazy"
+              />
+              <p className="font-heading text-2xl text-navy-700">
+                {items[current].name}
               </p>
-              <div className="flex items-center justify-center gap-4">
-                <img
-                  src={`https://images.unsplash.com/photo-${current % 2 === 0 ? "1494790108377-be9c29b29330" : "1507003211169-0a1dd7228f2d"}?w=100&h=100&fit=crop`}
-                  alt={items[current].name}
-                  className="w-12 h-12 rounded-full object-cover"
-                  loading="lazy"
-                />
-                <div className="text-left">
-                  <p className="font-semibold text-navy-700">
-                    {items[current].name}
-                  </p>
-                  <p className="text-sm text-muted">{items[current].role}</p>
-                </div>
-              </div>
+              <p className="text-sm font-medium text-accent mb-6">{items[current].role}</p>
+              <p className="text-lg text-muted leading-relaxed">
+                {items[current].text}
+              </p>
             </motion.div>
           </AnimatePresence>
 

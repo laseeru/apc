@@ -17,14 +17,14 @@ export function AboutPreview() {
           <MotionWrapper>
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&h=600&fit=crop"
-                alt="APC-ELI community"
-                className="rounded-2xl shadow-lg"
+                src="/images/events/event-01.jpg"
+                alt={t("title")}
+                className="rounded-2xl shadow-lg w-full aspect-[4/3] object-cover"
                 loading="lazy"
               />
               <div className="absolute -bottom-6 -right-6 bg-accent text-white p-6 rounded-2xl shadow-lg hidden md:block">
                 <span className="text-4xl font-bold">500+</span>
-                <p className="text-sm mt-1">Members Nationwide</p>
+                <p className="text-sm mt-1">{t("stat")}</p>
               </div>
             </div>
           </MotionWrapper>

@@ -13,7 +13,7 @@
     "contact": "Contacto"
   },
   "hero": {
-    "title": "Sección de Inglés de la Asociación de Pedagogos de Cuba",
+    "title": "Sección de Enseñanza de Inglés de la Asociación de Pedagogos de Cuba",
     "subtitle": "APC-ELI brinda oportunidades de desarrollo profesional a profesores de inglés en Cuba, manteniéndolos en contacto con temas y eventos relevantes a la profesión mediante boletines, seminarios y otros eventos.",
     "cta1": "Conocer Más",
     "cta2": "Hacerse Miembro",
@@ -23,7 +23,8 @@
     "title": "Sobre APC-ELI",
     "subtitle": "La Sección de Enseñanza de Inglés de la Asociación de Pedagogos de Cuba",
     "description": "APC-ELI es la Sección de Enseñanza de Inglés de la Asociación de Pedagogos de Cuba — una asociación profesional de maestros y profesores de inglés. Brinda oportunidades de desarrollo profesional, mantiene informados a los miembros mediante boletines y seminarios, ofrece un foro profesional para intercambiar ideas, e impulsa vínculos con asociaciones nacionales y foráneas.",
-    "link": "Conozca Más Sobre Nosotros"
+    "link": "Conozca Más Sobre Nosotros",
+    "stat": "Miembros en todo el país"
   },
   "features": {
     "title": "Actividades Destacadas",
@@ -66,7 +67,8 @@
     "date": "10-11 de diciembre de 2020",
     "location": "La Habana, Cuba",
     "description": "Únase a educadores e investigadores de Cuba y del extranjero para dos días de conferencias magistrales, talleres, investigaciones y oportunidades de networking.",
-    "cta": "Ver Detalles de la Conferencia"
+    "cta": "Ver Detalles de la Conferencia",
+    "edition": "Edición"
   },
   "newsletterPreview": {
     "title": "Últimos Boletines",
@@ -76,8 +78,16 @@
   "membershipPreview": {
     "title": "Únase a APC-ELI",
     "subtitle": "Forme parte de la comunidad líder de educación del inglés en Cuba",
-    "description": "Los miembros disfrutan de acceso a recursos exclusivos, descuentos en conferencias, oportunidades de desarrollo profesional y una red de educadores dedicados en todo el país.",
-    "cta": "Ver Opciones de Membresía"
+    "description": "Los miembros reciben información anticipada de los eventos de APC-ELI, registro gratuito a la mayoría de ellos, acceso a grupos de interés especial y comunidades de práctica, y la posibilidad de representar a APC-ELI ante IATEFL y otros eventos.",
+    "cta": "Ver Opciones de Membresía",
+    "benefits": [
+      "Información anticipada de eventos",
+      "Registro gratuito a la mayoría de los eventos",
+      "Grupos de interés especial",
+      "Representación ante IATEFL",
+      "Becas y talleres de invierno",
+      "Reconocimiento profesional"
+    ]
   },
   "galleryPreview": {
     "title": "Galería de Fotos",
@@ -104,7 +114,7 @@
         "text": "Profesor y trainer con más de veinte años de experiencia. Co-autor del libro de metodología 'Teaching Lexically'."
       },
       {
-        "name": "Susan Piper",
+        "name": "Sue Piper",
         "role": "Líder del Hands Up Project",
         "text": "Ha participado activamente en varios webinars de APC-ELI, liderando sesiones sobre Reading tanto en el National ELT Colloquium como en el programa de maestría de la Universidad Varona."
       }
@@ -113,10 +123,6 @@
   "about": {
     "title": "Sobre APC-ELI",
     "subtitle": "Conozca la Sección de Enseñanza de Inglés de la Asociación de Pedagogos de Cuba",
-    "history": {
-      "title": "¿Qué es APC-ELI?",
-      "content": "APC-ELI es la Sección de Enseñanza de Inglés de la Asociación de Pedagogos de Cuba — una asociación profesional de maestros y profesores de inglés. APC-ELI brinda oportunidades de desarrollo profesional, trabajando para la superación continua y el crecimiento de sus miembros. Mantiene informados a los maestros y profesores de inglés acerca de temas y eventos relevantes a la profesión mediante boletines, seminarios y otros eventos. Les brinda a los profesores un foro profesional donde pueden interactuar, intercambiar ideas y debatir cuestiones relacionadas a su área de trabajo. Impulsa el desarrollo de vínculos entre profesores y con asociaciones similares nacionales o foráneas."
-    },
     "mission": {
       "title": "Nuestra Misión",
       "content": "Proveer oportunidades de desarrollo profesional a los profesores de inglés en Cuba, mantenerlos en contacto con temas y eventos relevantes, y fomentar vínculos con otras asociaciones nacionales e internacionales para el mejoramiento continuo de la enseñanza del idioma inglés."
@@ -139,17 +145,66 @@
     "values": {
       "title": "Nuestros Valores",
       "items": [
-        { "title": "Profesionalismo", "description": "Trabajamos para la superación continua y el crecimiento profesional de nuestros miembros." },
-        { "title": "Colaboración", "description": "Fomentamos vínculos entre profesores y con asociaciones nacionales e internacionales." },
-        { "title": "Innovación", "description": "Acogemos nuevas metodologías y tecnologías que mejoran la enseñanza del inglés." },
-        { "title": "Inclusión", "description": "Llegamos a profesores de zonas rurales y montañosas, sin importar sus limitaciones tecnológicas." },
-        { "title": "Compromiso Social", "description": "Jóvenes profesores y estudiantes se involucran en actividades comunitarias para ayudar a los más vulnerables." },
-        { "title": "Impacto", "description": "Medimos nuestro éxito por el impacto positivo en la calidad de la enseñanza del inglés en Cuba." }
+        {
+          "title": "Profesionalismo",
+          "description": "Trabajamos para la superación continua y el crecimiento profesional de nuestros miembros."
+        },
+        {
+          "title": "Colaboración",
+          "description": "Fomentamos vínculos entre profesores y con asociaciones nacionales e internacionales."
+        },
+        {
+          "title": "Innovación",
+          "description": "Acogemos nuevas metodologías y tecnologías que mejoran la enseñanza del inglés."
+        },
+        {
+          "title": "Inclusión",
+          "description": "Llegamos a profesores de zonas rurales y montañosas, sin importar sus limitaciones tecnológicas."
+        },
+        {
+          "title": "Compromiso Social",
+          "description": "Jóvenes profesores y estudiantes se involucran en actividades comunitarias para ayudar a los más vulnerables."
+        },
+        {
+          "title": "Impacto",
+          "description": "Medimos nuestro éxito por el impacto positivo en la calidad de la enseñanza del inglés en Cuba."
+        }
       ]
     },
     "why": {
       "title": "Por Qué APC-ELI es Importante",
       "content": "APC-ELI juega un papel crucial en apoyar a los educadores de inglés en Cuba, brindándoles oportunidades de desarrollo profesional, acceso a expertos internacionales y vinculación con asociaciones como IATEFL. En un mundo cada vez más interconectado, el dominio del inglés abre puertas, y APC-ELI está en el centro de hacer esto posible para los educadores cubanos."
+    },
+    "whatIs": {
+      "title": "¿Qué es la APC-ELI?",
+      "items": [
+        "APC-ELI es la Sección de Enseñanza de Inglés de la Asociación de Pedagogos de Cuba — una asociación profesional de maestros y profesores de inglés.",
+        "APC-ELI brinda oportunidades de desarrollo profesional, ya que trabaja para el crecimiento de sus miembros.",
+        "APC-ELI mantiene informados a los maestros y profesores de inglés acerca de temas y eventos relacionados con la profesión mediante boletines, seminarios y otros eventos que organice la sección y la propia asociación.",
+        "APC-ELI les brinda a los profesores un foro profesional, en el cual pueden interactuar, intercambiar ideas y debatir cuestiones relacionadas a su área de trabajo.",
+        "APC-ELI impulsa el desarrollo de vínculos entre profesores y con asociaciones similares sean nacionales o foráneas."
+      ]
+    },
+    "journey": {
+      "title": "Nuestra Trayectoria",
+      "items": [
+        {
+          "year": "2015",
+          "event": "APC-ELI se funda como Sección de Enseñanza de Inglés de la Asociación de Pedagogos de Cuba"
+        },
+        {
+          "year": "2018",
+          "event": "Representación en la reunión de asociaciones de Lima, Perú"
+        },
+        {
+          "year": "2019",
+          "event": "Reunión semestral del ejecutivo: acuerdos sobre becas IATEFL y nueva representación provincial"
+        },
+        {
+          "year": "2020",
+          "event": "5ta Conferencia Nacional APC-ELI: 10-11 de diciembre"
+        }
+      ]
     }
   },
   "board": {
@@ -171,9 +226,24 @@
     "previous": {
       "title": "Ediciones Anteriores",
       "items": [
-        { "year": "2020", "edition": "5ta", "theme": "Conferencia Nacional APC-ELI", "location": "La Habana" },
-        { "year": "2018", "edition": "4ta", "theme": "Conferencia Nacional APC-ELI", "location": "La Habana" }
+        {
+          "year": "2020",
+          "edition": "5ta",
+          "theme": "Conferencia Nacional APC-ELI",
+          "location": "La Habana"
+        },
+        {
+          "year": "2018",
+          "edition": "4ta",
+          "theme": "Conferencia Nacional APC-ELI",
+          "location": "La Habana"
+        }
       ]
+    },
+    "edition": "Edición",
+    "gallery": {
+      "title": "Momentos de Nuestras Conferencias Nacionales",
+      "santiago": "APC-ELI celebrando su 7ma Conferencia Nacional en la sede de Santiago de Cuba"
     }
   },
   "grants": {
@@ -182,14 +252,35 @@
     "grantsSection": {
       "title": "Proyectos Internacionales",
       "description": "APC-ELI ha sido beneficiaria de importantes proyectos internacionales que han impactado positivamente en la formación de profesores de inglés en todo el país.",
-      "eligibility": { "title": "Requisitos" },
-      "current": { "title": "Oportunidades Actuales" }
+      "eligibility": {
+        "title": "Requisitos"
+      },
+      "current": {
+        "title": "Oportunidades Actuales"
+      }
     },
     "workshopsSection": {
       "title": "Talleres y Cursos",
       "description": "APC-ELI organiza talleres de desarrollo profesional con expertos nacionales e internacionales para mejorar las habilidades de enseñanza e introducir nuevas metodologías.",
-      "upcoming": { "title": "Próximas Actividades" },
-      "past": { "title": "Talleres Anteriores" }
+      "upcoming": {
+        "title": "Próximas Actividades"
+      },
+      "past": {
+        "title": "Talleres Anteriores"
+      }
+    },
+    "deadline": "Fecha límite",
+    "applyNow": "Solicitar",
+    "supported": {
+      "title": "Profesores Apoyados por APC-ELI",
+      "description": "Los miembros activos pueden ser seleccionados y apoyados para representar a los profesores en diversos eventos, incluyendo la conferencia anual de IATEFL. A continuación, algunos de los profesores que APC-ELI ha apoyado para asistir a IATEFL y otros eventos:"
+    },
+    "grantWorkshops": {
+      "title": "Talleres Realizados con Grants Recibidos",
+      "description": "Brindando desarrollo profesional a los nuevos miembros de APC-ELI."
+    },
+    "booklets": {
+      "title": "Folletos Producidos como Parte de los Grants Recibidos"
     }
   },
   "newsletters": {
@@ -197,19 +288,48 @@
     "subtitle": "Manténgase informado con las últimas noticias, investigaciones y actualizaciones de APC-ELI",
     "description": "Nuestro boletín trimestral mantiene a los miembros informados sobre próximos eventos, investigaciones recientes, oportunidades de desarrollo profesional y noticias organizacionales. Explore nuestro archivo a continuación.",
     "items": [
-      { "title": "Boletín APC-ELI", "month": "Junio", "year": "2019", "summary": "Resumen de la reunión semestral del ejecutivo, acuerdos y próximas actividades. Participación en IATEFL Liverpool 2019." },
-      { "title": "Boletín APC-ELI", "month": "Marzo", "year": "2019", "summary": "Convocatoria para becas IATEFL, resultados de la Semana Británica y próximos talleres." },
-      { "title": "Boletín APC-ELI", "month": "Diciembre", "year": "2018", "summary": "Revisión de fin de año, resumen de la reunión de Lima, Perú y planes para el próximo año." },
-      { "title": "Boletín APC-ELI", "month": "Septiembre", "year": "2018", "summary": "Balance de acciones y actividades del período, nuevas oportunidades de colaboración internacional." }
+      {
+        "title": "Boletín APC-ELI",
+        "month": "Junio",
+        "year": "2019",
+        "summary": "Resumen de la reunión semestral del ejecutivo, acuerdos y próximas actividades. Participación en la conferencia anual de IATEFL."
+      },
+      {
+        "title": "Boletín APC-ELI",
+        "month": "Marzo",
+        "year": "2019",
+        "summary": "Convocatoria para becas IATEFL, resultados de la Semana Británica y próximos talleres."
+      },
+      {
+        "title": "Boletín APC-ELI",
+        "month": "Diciembre",
+        "year": "2018",
+        "summary": "Revisión de fin de año, resumen de la reunión de Lima, Perú y planes para el próximo año."
+      },
+      {
+        "title": "Boletín APC-ELI",
+        "month": "Septiembre",
+        "year": "2018",
+        "summary": "Balance de acciones y actividades del período, nuevas oportunidades de colaboración internacional."
+      }
     ]
   },
   "membership": {
     "title": "Membresía",
     "subtitle": "Únase a la Sección de Enseñanza de Inglés de la Asociación de Pedagogos de Cuba",
-    "benefits": { "title": "Beneficios para Miembros" },
-    "tiers": { "title": "Categorías de Membresía" },
-    "howToJoin": { "title": "Cómo Asociarse" },
-    "faq": { "title": "Preguntas Frecuentes" }
+    "benefits": {
+      "title": "¿Por qué asociarse a la APC-ELI?",
+      "intro": "Nuestros miembros pueden:"
+    },
+    "tiers": {
+      "title": "Categorías de Membresía"
+    },
+    "howToJoin": {
+      "title": "Cómo Asociarse"
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes"
+    }
   },
   "gallery": {
     "title": "Galería de Fotos",
@@ -217,7 +337,8 @@
     "filterAll": "Todas",
     "filterConferences": "Conferencias",
     "filterWorkshops": "Talleres",
-    "filterCommunity": "Comunidad"
+    "filterCommunity": "Comunidad",
+    "filterInternational": "Internacional"
   },
   "activities": {
     "title": "Actividades Colaterales",
@@ -228,15 +349,24 @@
     "title": "Colaboraciones",
     "subtitle": "Agencias internas, externas y equipo de apoyo internacional",
     "description": "APC-ELI colabora con diversas agencias nacionales e internacionales para fortalecer la enseñanza del inglés en Cuba.",
-    "internal": { "title": "Agencias Internas" },
-    "external": { "title": "Agencias Externas" },
-    "celts": {
-      "title": "CELTS (Cuban ELT Support)",
-      "description": "Red de apoyo a la enseñanza del inglés en Cuba."
+    "internal": {
+      "title": "Agencias Internas"
+    },
+    "external": {
+      "title": "Agencias Externas"
     },
     "supportTeam": {
-      "title": "Equipo de Apoyo Internacional",
-      "description": "Expertos internacionales que han colaborado con APC-ELI en webinars, cursos y eventos."
+      "title": "Miembros de CELST",
+      "description": "Algunos de los profesores y expertos en ELT del Cuba English Language Support Team."
+    },
+    "celst": {
+      "title": "CELST — Cuba English Language Support Team",
+      "description": "Grupo de profesores de inglés que han apoyado de manera amable y voluntaria a APC-ELI. Han contribuido enormemente con sus webinars, talleres y aportes financieros a los eventos del idioma inglés en Cuba.",
+      "andMore": "Y algunos más…"
+    },
+    "certificate": {
+      "title": "Reconocimiento del British Council",
+      "caption": "Certificado entregado por el British Council a APC-ELI por su contribución a la enseñanza del inglés"
     }
   },
   "contact": {
@@ -248,13 +378,15 @@
       "subject": "Asunto",
       "message": "Su Mensaje",
       "submit": "Enviar Mensaje",
-      "success": "Gracias por su mensaje. Le responderemos pronto."
+      "success": "Gracias por su mensaje. Le responderemos pronto.",
+      "heading": "Envíenos un mensaje"
     },
     "info": {
       "title": "Información de Contacto",
       "address": "Avenida 41 no 3603 entre 43 y 45, Reparto Kolhy, La Habana, Cuba",
       "email": "apcelioficial@gmail.com",
-      "phone": ""
+      "phone": "",
+      "location": "Nuestra Ubicación"
     },
     "social": {
       "title": "Síganos"
@@ -282,5 +414,10 @@
     "applyNow": "Solicitar Ahora",
     "viewDetails": "Ver Detalles",
     "downloadProgram": "Descargar Programa"
+  },
+  "partners": {
+    "title": "Instituciones con las que Hemos Trabajado",
+    "subtitle": "Instituciones nacionales e internacionales con las que APC-ELI ha colaborado",
+    "cta": "Ver Todas las Colaboraciones"
   }
 }

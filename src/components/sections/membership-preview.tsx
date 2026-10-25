@@ -7,17 +7,9 @@ import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n/navigation";
 import { ArrowRight, CheckCircle } from "lucide-react";
 
-const benefits = [
-  "Conference Discounts",
-  "Workshop Access",
-  "Grant Eligibility",
-  "Publications",
-  "Networking",
-  "Professional Recognition",
-];
-
 export function MembershipPreview() {
   const t = useTranslations("membershipPreview");
+  const benefits: string[] = t.raw("benefits");
 
   return (
     <section className="py-20 bg-soft-gray">
@@ -50,9 +42,9 @@ export function MembershipPreview() {
 
           <MotionWrapper delay={0.15}>
             <img
-              src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&h=600&fit=crop"
-              alt="APC-ELI members"
-              className="rounded-2xl shadow-lg"
+              src="/images/events/event-02.jpg"
+              alt={t("title")}
+              className="rounded-2xl shadow-lg w-full aspect-[4/3] object-cover"
               loading="lazy"
             />
           </MotionWrapper>

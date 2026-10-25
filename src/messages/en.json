@@ -13,7 +13,7 @@
     "contact": "Contact"
   },
   "hero": {
-    "title": "English Teaching Section of the Association of Pedagogues of Cuba",
+    "title": "English Language Teaching Section of the Association of Pedagogues of Cuba",
     "subtitle": "APC-ELI provides professional development opportunities for English teachers in Cuba, keeping them in touch with relevant topics and events through newsletters, seminars and other events.",
     "cta1": "Learn More",
     "cta2": "Become a Member",
@@ -21,9 +21,10 @@
   },
   "aboutPreview": {
     "title": "About APC-ELI",
-    "subtitle": "The English language specialists section of the Association of Pedagogues of Cuba",
-    "description": "APC-ELI (Asociación de Pedagogos de Cuba-Especialistas en Lengua Inglesa) is the English teachers section belonging to the Association of Pedagogues of Cuba. It brings together educators, researchers, and language professionals from across Cuba to advance the quality of English language teaching and learning through conferences, workshops, research grants, and community outreach.",
-    "link": "Learn More About Us"
+    "subtitle": "The English language teaching specialists section of the Association of Pedagogues of Cuba",
+    "description": "APC-ELI is the English Language Teaching Section of the Cuban Association of Pedagogues — a professional association of teachers and professors of English. It provides opportunities for professional development, keeps English teachers in touch with issues and events relevant to the profession, offers a professional forum to exchange ideas, and encourages links with other domestic and foreign associations.",
+    "link": "Learn More About Us",
+    "stat": "Members Nationwide"
   },
   "features": {
     "title": "Featured Activities",
@@ -50,8 +51,8 @@
         "description": "Initiatives that bring English language education to underserved communities across Cuba."
       },
       {
-        "title": "British Week",
-        "description": "Collaborative activities with the British Council including winter courses, on-site workshops, and cultural events."
+        "title": "The British Week",
+        "description": "Collaborative activities with the British Embassy in Cuba, including cultural events, contests and the Culture Club."
       }
     ]
   },
@@ -66,7 +67,8 @@
     "date": "December 10-11, 2020",
     "location": "Havana, Cuba",
     "description": "Join educators and researchers from across Cuba and abroad for two days of keynote presentations, workshops, research papers, and networking opportunities.",
-    "cta": "View Conference Details"
+    "cta": "View Conference Details",
+    "edition": "Edition"
   },
   "newsletterPreview": {
     "title": "Latest Newsletters",
@@ -76,8 +78,16 @@
   "membershipPreview": {
     "title": "Join APC-ELI",
     "subtitle": "Become part of Cuba's leading English language education community",
-    "description": "Members enjoy access to exclusive resources, discounted conference registration, professional development opportunities, and a network of dedicated educators across the country.",
-    "cta": "View Membership Options"
+    "description": "Members get advance notice of APC-ELI events, free registration to most of them, access to special interest groups and communities of practice, and the chance to represent APC-ELI at IATEFL and other events.",
+    "cta": "View Membership Options",
+    "benefits": [
+      "Advance notice of events",
+      "Free registration to most events",
+      "Special Interest Groups",
+      "IATEFL representation",
+      "Scholarships and winter workshops",
+      "Professional recognition"
+    ]
   },
   "galleryPreview": {
     "title": "Photo Gallery",
@@ -104,7 +114,7 @@
         "text": "Teacher and trainer with over twenty years of experience. Co-author of the methodology book 'Teaching Lexically'."
       },
       {
-        "name": "Susan Piper",
+        "name": "Sue Piper",
         "role": "Leader of Hands Up Project",
         "text": "She has actively participated in several APC-ELI webinars, leading sessions on Reading both at the National ELT Colloquium and the Master's program at Varona University."
       }
@@ -112,11 +122,7 @@
   },
   "about": {
     "title": "About APC-ELI",
-    "subtitle": "Our mission, vision, and commitment to English language education in Cuba",
-    "history": {
-      "title": "Our History",
-      "content": "APC-ELI (Asociación de Pedagogos de Cuba-Especialistas en Lengua Inglesa) is the English teachers section belonging to the Association of Pedagogues of Cuba. Since its founding, it has worked to bring together English educators from across the country, fostering professional development, international collaboration, and excellence in language teaching. APC-ELI has actively participated in international events such as IATEFL (Liverpool 2019), association meetings in Lima, Peru, and has collaborated closely with the British Council in organizing British Week, winter courses, and on-site workshops."
-    },
+    "subtitle": "Get to know the English Language Teaching Section of the Association of Pedagogues of Cuba",
     "mission": {
       "title": "Our Mission",
       "content": "To advance the quality of English language education in Cuba through professional development, research, collaboration, and advocacy, empowering educators to create meaningful learning experiences for their students."
@@ -139,60 +145,71 @@
     "values": {
       "title": "Our Values",
       "items": [
-        { "title": "Excellence", "description": "We strive for the highest standards in English language teaching and professional development." },
-        { "title": "Collaboration", "description": "We believe in the power of working together across institutions, borders, and disciplines." },
-        { "title": "Innovation", "description": "We embrace new ideas, methodologies, and technologies that enhance language education." },
-        { "title": "Inclusion", "description": "We are committed to equitable access to quality English language education for all Cubans." },
-        { "title": "Integrity", "description": "We operate with transparency, professionalism, and respect for all members of our community." },
-        { "title": "Impact", "description": "We measure our success by the positive change we create in classrooms and communities." }
+        {
+          "title": "Excellence",
+          "description": "We strive for the highest standards in English language teaching and professional development."
+        },
+        {
+          "title": "Collaboration",
+          "description": "We believe in the power of working together across institutions, borders, and disciplines."
+        },
+        {
+          "title": "Innovation",
+          "description": "We embrace new ideas, methodologies, and technologies that enhance language education."
+        },
+        {
+          "title": "Inclusion",
+          "description": "We are committed to equitable access to quality English language education for all Cubans."
+        },
+        {
+          "title": "Integrity",
+          "description": "We operate with transparency, professionalism, and respect for all members of our community."
+        },
+        {
+          "title": "Impact",
+          "description": "We measure our success by the positive change we create in classrooms and communities."
+        }
       ]
     },
     "why": {
       "title": "Why APC-ELI Matters",
-      "content": "In an era of global connection, English proficiency opens doors to educational opportunities, professional advancement, and cultural exchange. APC-ELI plays a crucial role in supporting the educators who make this possible. As a specialized section of the Association of Pedagogues of Cuba, we work to provide professional opportunities to members from across the country."
+      "content": "In an era of global connection, English proficiency opens doors to educational opportunities, professional advancement, and cultural exchange. APC-ELI plays a crucial role in supporting the educators who make this possible. As the English Language Teaching Section of the Association of Pedagogues of Cuba, we work to provide professional opportunities to members from across the country."
+    },
+    "whatIs": {
+      "title": "What is APC-ELI?",
+      "items": [
+        "APC-ELI is the English Language Teaching Section of the Cuban Association of Pedagogues — a professional association of teachers and professors of English.",
+        "APC-ELI provides opportunities for professional development by working for the continuous improvement and growth of its members.",
+        "APC-ELI keeps English teachers in touch with issues and events relevant to the profession through newsletters, seminars, and other events related to the section and the association.",
+        "APC-ELI provides teachers with a professional forum where they can develop interactions, exchange ideas and debate everything concerning their field of work.",
+        "APC-ELI encourages the development of links among teachers and with other domestic and foreign associations."
+      ]
+    },
+    "journey": {
+      "title": "Our Journey",
+      "items": [
+        {
+          "year": "2015",
+          "event": "APC-ELI founded as the English Language Teaching Section of the Association of Pedagogues of Cuba"
+        },
+        {
+          "year": "2018",
+          "event": "Representation at the associations meeting in Lima, Peru"
+        },
+        {
+          "year": "2019",
+          "event": "Executive semi-annual meeting: agreements on IATEFL scholarships and new provincial representation"
+        },
+        {
+          "year": "2020",
+          "event": "5th APC-ELI National Conference: December 10-11"
+        }
+      ]
     }
   },
   "board": {
     "title": "Board of Directors",
-    "subtitle": "Meet the leadership team of APC-ELI",
-    "members": [
-      {
-        "name": "DrC. Eduardo Garbey Savigne",
-        "role": "President / National Coordinator",
-        "institution": "",
-        "bio": "National Coordinator of APC-ELI. Represented the association at IATEFL 2019 in Liverpool, funded by the British Council, the UK teachers' union, and individual contribution from Russell Stannard."
-      },
-      {
-        "name": "DrC. Isora Enríquez",
-        "role": "Executive Member",
-        "institution": "",
-        "bio": "Executive member of APC-ELI. Represented the association at the associations meeting in Lima, Peru alongside Professor Ildefonso Díaz Sandoval from Artemisa province."
-      },
-      {
-        "name": "DrC. Liliana Casar",
-        "role": "Executive Member",
-        "institution": "",
-        "bio": "Executive member of APC-ELI. Participated in IATEFL 2019 in Liverpool representing the association, funded by the British Council."
-      },
-      {
-        "name": "Lisset Rubio",
-        "role": "Executive Member",
-        "institution": "",
-        "bio": "Executive member of APC-ELI, contributing to the development and management of the section's activities."
-      },
-      {
-        "name": "María de los A. Reyes",
-        "role": "Executive Member",
-        "institution": "",
-        "bio": "Executive member of APC-ELI, actively participating in the planning and execution of the association's initiatives."
-      },
-      {
-        "name": "Heriberto R. García",
-        "role": "Executive Member",
-        "institution": "",
-        "bio": "Executive member of APC-ELI, collaborating on the activities and projects of the English language specialists section."
-      }
-    ]
+    "subtitle": "Meet the leadership team of APC-ELI"
   },
   "conference": {
     "title": "National Conference",
@@ -209,9 +226,24 @@
     "previous": {
       "title": "Previous Editions",
       "items": [
-        { "year": "2020", "edition": "5th", "theme": "APC-ELI National Conference", "location": "Havana" },
-        { "year": "2018", "edition": "4th", "theme": "APC-ELI National Conference", "location": "Havana" }
+        {
+          "year": "2020",
+          "edition": "5th",
+          "theme": "APC-ELI National Conference",
+          "location": "Havana"
+        },
+        {
+          "year": "2018",
+          "edition": "4th",
+          "theme": "APC-ELI National Conference",
+          "location": "Havana"
+        }
       ]
+    },
+    "edition": "Edition",
+    "gallery": {
+      "title": "Moments from Our National Conferences",
+      "santiago": "APC-ELI holding its 7th National Conference in the Santiago de Cuba venue"
     }
   },
   "grants": {
@@ -220,14 +252,35 @@
     "grantsSection": {
       "title": "Grants & International Opportunities",
       "description": "APC-ELI manages international scholarship opportunities for its members, including IATEFL scholarships that allow Cuban educators to participate in international events. We believe in providing professional opportunities to members from all over the country.",
-      "eligibility": { "title": "Eligibility" },
-      "current": { "title": "Current Opportunities" }
+      "eligibility": {
+        "title": "Eligibility"
+      },
+      "current": {
+        "title": "Current Opportunities"
+      }
     },
     "workshopsSection": {
       "title": "Workshops",
       "description": "Our professional development workshops are designed to enhance teaching skills, introduce new methodologies, and foster collaboration among English language educators across Cuba.",
-      "upcoming": { "title": "Upcoming Workshops" },
-      "past": { "title": "Past Workshops" }
+      "upcoming": {
+        "title": "Upcoming Workshops"
+      },
+      "past": {
+        "title": "Past Workshops"
+      }
+    },
+    "deadline": "Deadline",
+    "applyNow": "Apply Now",
+    "supported": {
+      "title": "Teachers Supported by APC-ELI",
+      "description": "Active members can be selected and supported to represent teachers at several events, including the IATEFL annual conference. Below you can see some of the teachers who have been supported by APC-ELI to attend IATEFL and other events:"
+    },
+    "grantWorkshops": {
+      "title": "Workshops Delivered with Grants Received",
+      "description": "Providing professional development to new APC-ELI members."
+    },
+    "booklets": {
+      "title": "Booklets Produced as Part of the Grants Received"
     }
   },
   "newsletters": {
@@ -235,19 +288,48 @@
     "subtitle": "Stay informed with the latest news, research, and updates from APC-ELI",
     "description": "Our quarterly newsletter keeps members informed about upcoming events, recent research, professional development opportunities, and organizational news. Browse our archive below.",
     "items": [
-      { "title": "APC-ELI Newsletter", "month": "June", "year": "2019", "summary": "Summary of the executive's semi-annual meeting, agreements, and upcoming activities. Participation in IATEFL Liverpool 2019." },
-      { "title": "APC-ELI Newsletter", "month": "March", "year": "2019", "summary": "Call for IATEFL scholarships, results of British Week, and upcoming workshops." },
-      { "title": "APC-ELI Newsletter", "month": "December", "year": "2018", "summary": "Year-end review, summary of the Lima, Peru meeting, and plans for the coming year." },
-      { "title": "APC-ELI Newsletter", "month": "September", "year": "2018", "summary": "Balance of activities for the period, new international collaboration opportunities." }
+      {
+        "title": "APC-ELI Newsletter",
+        "month": "June",
+        "year": "2019",
+        "summary": "Summary of the executive's semi-annual meeting, agreements, and upcoming activities. Participation in the IATEFL annual conference."
+      },
+      {
+        "title": "APC-ELI Newsletter",
+        "month": "March",
+        "year": "2019",
+        "summary": "Call for IATEFL scholarships, results of The British Week, and upcoming workshops."
+      },
+      {
+        "title": "APC-ELI Newsletter",
+        "month": "December",
+        "year": "2018",
+        "summary": "Year-end review, summary of the Lima, Peru meeting, and plans for the coming year."
+      },
+      {
+        "title": "APC-ELI Newsletter",
+        "month": "September",
+        "year": "2018",
+        "summary": "Balance of activities for the period, new international collaboration opportunities."
+      }
     ]
   },
   "membership": {
     "title": "Membership",
-    "subtitle": "Join the English Teaching Section of the Association of Pedagogues of Cuba",
-    "benefits": { "title": "Member Benefits" },
-    "tiers": { "title": "Membership Categories" },
-    "howToJoin": { "title": "How to Join" },
-    "faq": { "title": "Frequently Asked Questions" }
+    "subtitle": "Join the English Language Teaching Section of the Association of Pedagogues of Cuba",
+    "benefits": {
+      "title": "Why become a member of APC-ELI?",
+      "intro": "Members can:"
+    },
+    "tiers": {
+      "title": "Membership Categories"
+    },
+    "howToJoin": {
+      "title": "How to Join"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions"
+    }
   },
   "gallery": {
     "title": "Photo Gallery",
@@ -255,76 +337,36 @@
     "filterAll": "All",
     "filterConferences": "Conferences",
     "filterWorkshops": "Workshops",
-    "filterCommunity": "Community"
+    "filterCommunity": "Community",
+    "filterInternational": "International"
   },
   "activities": {
     "title": "Collateral Activities",
     "subtitle": "Webinars, courses, festivals, and community activities",
-    "description": "APC-ELI develops a wide range of collateral activities including webinars, webcourses, contests, and festivals for in-service teachers, trainees, and students. The pandemic transformed the way teachers delivered classes and communicated with students, boosting online teaching, distance education, and blended learning.",
-    "items": [
-      {
-        "title": "Webinars with International Experts",
-        "description": "APC-ELI organizes webinars with renowned international experts such as Ken Wilson (author of over 30 ELT titles), Jeremy Harmer (author of The Practice of English Language Teaching), Hugh Dellar (co-founder of Lexical Lab), and Carol Harvey (English communication coach).",
-        "image": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&h=500&fit=crop"
-      },
-      {
-        "title": "Winter Courses",
-        "description": "Intensive on-site professional development courses at APC headquarters, featuring international workshop leaders such as Julia Simpks (Scotland), who led a 2-day workshop on storytelling.",
-        "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&h=500&fit=crop"
-      },
-      {
-        "title": "English Language Festival",
-        "description": "Annual English language festival with intercultural activities, including sessions on topics such as Scotland and Cuba led by experts like Joan Cutting, retired university professor from Scotland.",
-        "image": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=500&fit=crop"
-      },
-      {
-        "title": "Social and Community Activities",
-        "description": "Young teachers and students actively participate in social and community activities to help sick and vulnerable people, demonstrating APC-ELI's social commitment.",
-        "image": "https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=800&h=500&fit=crop"
-      },
-      {
-        "title": "Hands Up Project",
-        "description": "In collaboration with Susan Piper, leader of the Hands Up Project, reading sessions were developed for students of the Master's program at Universidad Pedagógica Varona, along with webinars on Reading at the National ELT Colloquium.",
-        "image": "https://images.unsplash.com/photo-1523050854058-8df90110c7f1?w=800&h=500&fit=crop"
-      }
-    ]
+    "description": "APC-ELI develops a wide range of collateral activities including webinars, webcourses, contests, and festivals for in-service teachers, trainees, and students. The pandemic transformed the way teachers delivered classes and communicated with students, boosting online teaching, distance education, and blended learning."
   },
   "collaboration": {
     "title": "Collaborations",
     "subtitle": "Internal agencies, external agencies, and international support team",
     "description": "APC-ELI collaborates with various national and international agencies to strengthen English language teaching in Cuba.",
     "internal": {
-      "title": "Internal Agencies",
-      "items": [
-        { "name": "MES", "description": "Ministry of Higher Education" },
-        { "name": "MINED", "description": "Ministry of Education" },
-        { "name": "MINSAP", "description": "Ministry of Public Health" }
-      ]
+      "title": "Internal Agencies"
     },
     "external": {
-      "title": "External Agencies",
-      "items": [
-        { "name": "British Council", "description": "Support for English teacher training in Cuba, connectivity funds, and event organization." },
-        { "name": "IATEFL", "description": "International Association of Teachers of English as a Foreign Language" },
-        { "name": "Hornby Trust", "description": "Training projects for teachers in rural and mountainous areas." }
-      ]
-    },
-    "celts": {
-      "title": "CELTS (Cuban ELT Support)",
-      "description": "Support network for English language teaching in Cuba."
+      "title": "External Agencies"
     },
     "supportTeam": {
-      "title": "International Support Team",
-      "description": "International experts who have collaborated with APC-ELI in webinars, courses, and events.",
-      "members": [
-        { "name": "Joan Cutting", "expertise": "Interculturality", "detail": "Retired university professor from Scotland. Led a session on Scotland-Cuba interculturality during the English Language Festival 2021." },
-        { "name": "Julia Simpks", "expertise": "Storytelling", "detail": "Retired teacher from Scotland. Led a 2-day workshop on storytelling at the winter course at APC headquarters." },
-        { "name": "Susan Piper", "expertise": "Reading / Hands Up Project", "detail": "Leader of the Hands Up Project. Has participated in several APC-ELI webinars on Reading." },
-        { "name": "Ken Wilson", "expertise": "ELT Methodology", "detail": "Author of over 30 ELT titles. Keynote speaker at the National ELT Colloquium." },
-        { "name": "Carol Harvey", "expertise": "English Communication", "detail": "English communication coach from Manitoba, Canada. Developed the webinar 'Planning for Success' on Growth Mindset." },
-        { "name": "Hugh Dellar", "expertise": "Lexical Teaching", "detail": "Co-founder of Lexical Lab, co-author of 'Teaching Lexically'." },
-        { "name": "Jeremy Harmer", "expertise": "ELT Methodology", "detail": "Author of 'The Practice of English Language Teaching', world reference in English teacher training." }
-      ]
+      "title": "CELST Members",
+      "description": "Some of the teachers and ELT experts of the Cuba English Language Support Team."
+    },
+    "celst": {
+      "title": "CELST — Cuba English Language Support Team",
+      "description": "Group of English Language Teachers who have kindly and voluntarily supported APC-ELI. They have greatly contributed with their webinars, workshops and financial contribution to the English language events in Cuba.",
+      "andMore": "And some more…"
+    },
+    "certificate": {
+      "title": "Recognition from the British Council",
+      "caption": "Certificate awarded by the British Council to APC-ELI for its contribution to ELT"
     }
   },
   "contact": {
@@ -336,25 +378,27 @@
       "subject": "Subject",
       "message": "Your Message",
       "submit": "Send Message",
-      "success": "Thank you for your message. We will get back to you soon."
+      "success": "Thank you for your message. We will get back to you soon.",
+      "heading": "Send us a message"
     },
     "info": {
       "title": "Contact Information",
       "address": "Avenida 41 no 3603 between 43 and 45, Reparto Kolhy, Havana, Cuba",
       "email": "apcelioficial@gmail.com",
-      "phone": ""
+      "phone": "",
+      "location": "Our Location"
     },
     "social": {
       "title": "Follow Us"
     }
   },
   "footer": {
-    "description": "English Teaching Section of the Association of Pedagogues of Cuba, dedicated to the professional development of English teachers.",
+    "description": "English Language Teaching Section of the Association of Pedagogues of Cuba, dedicated to the professional development of English teachers.",
     "quickLinks": "Quick Links",
     "contact": "Contact",
     "social": "Follow Us",
     "copyright": "© 2026 APC-ELI. All rights reserved.",
-    "org": "Association of Pedagogues of Cuba-English Language Specialists"
+    "org": "Association of Pedagogues of Cuba — English Language Teaching Specialists"
   },
   "notFound": {
     "title": "Page Not Found",
@@ -370,5 +414,10 @@
     "applyNow": "Apply Now",
     "viewDetails": "View Details",
     "downloadProgram": "Download Program"
+  },
+  "partners": {
+    "title": "Institutions We Have Worked With",
+    "subtitle": "National and international institutions that APC-ELI has collaborated with",
+    "cta": "View All Collaborations"
   }
 }

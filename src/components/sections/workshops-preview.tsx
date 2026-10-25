@@ -1,38 +1,17 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
+import { grantsData } from "@/data";
 import { SectionHeader } from "@/components/shared/section-header";
 import { EventCard } from "@/components/shared/event-card";
 import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n/navigation";
 import { ArrowRight } from "lucide-react";
 
-const workshops = [
-  {
-    title: "Task-Based Language Teaching",
-    date: "July 15-16, 2026",
-    location: "Havana",
-    description:
-      "A two-day intensive workshop on implementing task-based approaches in the English classroom.",
-  },
-  {
-    title: "Integrating Technology in ELT",
-    date: "August 5-6, 2026",
-    location: "Santiago de Cuba",
-    description:
-      "Practical strategies for using digital tools and resources in English language teaching.",
-  },
-  {
-    title: "Assessment and Evaluation in ELT",
-    date: "September 20-21, 2026",
-    location: "Santa Clara",
-    description:
-      "Designing effective assessments that measure language proficiency and support learning.",
-  },
-];
-
 export function WorkshopsPreview() {
   const t = useTranslations("workshops");
+  const locale = useLocale();
+  const workshops = grantsData[locale as "es" | "en"].upcomingWorkshops;
 
   return (
     <section className="py-20 bg-white">

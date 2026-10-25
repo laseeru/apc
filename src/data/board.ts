@@ -11,7 +11,7 @@ export const boardData: Record<string, BoardMember[]> = {
       name: "E. Garbey Savigne, PhD",
       role: "Presidente / Coordinador Nacional",
       institution: "Universidad de Ciencias Médicas de La Habana",
-      bio: "Coordinador Nacional de APC-ELI. Representó a la asociación en IATEFL 2019 en Liverpool, financiado por el British Council, el sindicato de maestros del Reino Unido y la contribución individual de Russell Stannard."
+      bio: "Coordinador Nacional de APC-ELI. Ha representado a la asociación en conferencias anuales de IATEFL y otros eventos internacionales."
     },
     {
       name: "Isora Enríquez O'Farrill, PhD",
@@ -43,7 +43,7 @@ export const boardData: Record<string, BoardMember[]> = {
       name: "E. Garbey Savigne, PhD",
       role: "Chairperson / National Coordinator",
       institution: "Havana Medical University",
-      bio: "National Coordinator of APC-ELI. Represented the association at IATEFL 2019 in Liverpool, funded by the British Council, the UK teachers' union, and individual contribution from Russell Stannard."
+      bio: "National Coordinator of APC-ELI. Has represented the association at IATEFL annual conferences and other international events."
     },
     {
       name: "Isora Enríquez O'Farrill, PhD",

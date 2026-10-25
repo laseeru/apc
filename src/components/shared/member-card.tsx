@@ -30,13 +30,24 @@ export function MemberCard({
       className="bg-white rounded-xl border border-gray-100 p-6 shadow-sm hover:shadow-lg transition-all duration-300 group"
     >
       <div className="flex flex-col items-center text-center">
-        <div className="w-24 h-24 rounded-full overflow-hidden mb-4 ring-2 ring-navy-100 group-hover:ring-accent transition-all duration-300">
-          <img
-            src={photo || `https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop`}
-            alt={name}
-            className="w-full h-full object-cover"
-            loading="lazy"
-          />
+        <div className="w-24 h-24 rounded-full overflow-hidden mb-4 ring-2 ring-navy-100 group-hover:ring-accent transition-all duration-300 bg-navy-100 flex items-center justify-center">
+          {photo ? (
+            <img
+              src={photo}
+              alt={name}
+              className="w-full h-full object-cover"
+              loading="lazy"
+            />
+          ) : (
+            <span className="text-2xl font-bold text-navy-700">
+              {name
+                .split(" ")
+                .filter((w) => /^[A-ZÁÉÍÓÚÑ]/.test(w) && !w.endsWith("."))
+                .map((w) => w[0])
+                .slice(0, 2)
+                .join("")}
+            </span>
+          )}
         </div>
         <h3 className="text-xl font-semibold text-navy-700 mb-1">{name}</h3>
         <span className="inline-block bg-accent/10 text-accent text-sm font-medium px-3 py-1 rounded-full mb-2">

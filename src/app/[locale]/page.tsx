@@ -7,6 +7,7 @@ import { NewsletterPreview } from "@/components/sections/newsletter-preview";
 import { MembershipPreview } from "@/components/sections/membership-preview";
 import { GalleryPreview } from "@/components/sections/gallery-preview";
 import { Testimonials } from "@/components/sections/testimonials";
+import { Partners } from "@/components/sections/partners";
 
 export default function HomePage() {
   return (
@@ -20,6 +21,7 @@ export default function HomePage() {
       <MembershipPreview />
       <GalleryPreview />
       <Testimonials />
+      <Partners />
     </>
   );
 }

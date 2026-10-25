@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { MotionWrapper, FadeIn } from "@/components/shared/motion-wrapper";
+import { MotionWrapper } from "@/components/shared/motion-wrapper";
 import { Button } from "@/components/ui/button";
 import { Mail, MapPin, Phone, Send, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 
@@ -35,7 +35,7 @@ export default function ContactPage() {
           <div className="grid lg:grid-cols-2 gap-16">
             <MotionWrapper>
               <h2 className="font-heading text-2xl text-navy-700 mb-6">
-                Send us a message
+                {t("form.heading")}
               </h2>
               <form className="space-y-5">
                 <div>
@@ -140,14 +140,15 @@ export default function ContactPage() {
                 <div className="bg-soft-gray rounded-2xl p-6 border border-gray-100">
                   <h4 className="font-semibold text-navy-700 mb-3 flex items-center gap-2">
                     <MapPin className="w-4 h-4 text-accent" />
-                    Our Location
+                    {t("info.location")}
                   </h4>
                   <div className="aspect-[16/9] rounded-xl bg-navy-100 overflow-hidden">
-                    <img
-                      src="https://images.unsplash.com/photo-1593558099516-f41e0ce5a7df?w=800&h=450&fit=crop"
-                      alt="Map placeholder - Havana, Cuba"
-                      className="w-full h-full object-cover"
+                    <iframe
+                      src="https://www.google.com/maps?q=Avenida+41+3603,+Kohly,+La+Habana,+Cuba&output=embed"
+                      title={t("info.address")}
+                      className="w-full h-full border-0"
                       loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
                     />
                   </div>
                   <p className="text-sm text-muted mt-2">{t("info.address")}</p>
