@@ -63,10 +63,10 @@
   },
   "conferencePreview": {
     "title": "Conferencia Nacional",
-    "subtitle": "5ta Conferencia Nacional de la APC-ELI",
-    "date": "10-11 de diciembre de 2020",
-    "location": "La Habana, Cuba",
-    "description": "Únase a educadores e investigadores de Cuba y del extranjero para dos días de conferencias magistrales, talleres, investigaciones y oportunidades de networking.",
+    "subtitle": "8va Conferencia Nacional de APC-ELI",
+    "date": "10–11 de diciembre de 2026",
+    "location": "La Habana, Villa Clara, Holguín, Santiago de Cuba, Guantánamo — y en línea",
+    "description": "Una conferencia híbrida con varias sedes para profesores de la enseñanza primaria, secundaria y superior, con 101 ponencias — 32 presenciales y 69 en línea — y como conferencistas principales el Embajador Halim Majeed y la Dra. Catherine Walter.",
     "cta": "Ver Detalles de la Conferencia",
     "edition": "Edición"
   },
@@ -213,15 +213,15 @@
   },
   "conference": {
     "title": "Conferencia Nacional",
-    "subtitle": "5ta Conferencia Nacional de la APC-ELI",
-    "date": "10-11 de diciembre de 2020",
-    "location": "La Habana, Cuba",
-    "description": "La Conferencia Nacional APC-ELI es el principal evento de la sección, reuniendo a profesores de inglés de todo el país. La 5ta edición se celebró el 10 y 11 de diciembre de 2020 en La Habana, con ponencias, talleres interactivos, presentaciones de investigación y oportunidades de networking. El evento propicia la participación tanto de ponentes como de no ponentes, con énfasis en jóvenes maestros y estudiantes de pregrado de los últimos años.",
+    "subtitle": "8va Conferencia Nacional de APC-ELI",
+    "date": "10–11 de diciembre de 2026",
+    "location": "La Habana, Villa Clara, Holguín, Santiago de Cuba, Guantánamo — y en línea",
+    "description": "La 8va Conferencia sobre Enseñanza del Idioma Inglés y Cultura es un evento híbrido (en línea y presencial) con varias sedes. Es una oportunidad para que los profesores de la enseñanza primaria, secundaria y superior se vinculen y compartan experiencias y buenas prácticas del aula de inglés. Esta edición está patrocinada en parte por la filial de Brighton de la Cuba Solidarity Campaign.",
     "cta": "Más Información",
     "participants": {
       "title": "Participación",
       "description": "A la conferencia asisten profesores de todo el país, investigadores y estudiantes de pregrado. Se presentan trabajos de investigación, experiencias pedagógicas y talleres prácticos sobre la enseñanza del inglés.",
-      "audience": "Maestros y profesores de inglés, investigadores, estudiantes de pregrado"
+      "audience": "Profesores y estudiantes de pregrado de inglés"
     },
     "previous": {
       "title": "Ediciones Anteriores",
@@ -244,7 +244,40 @@
     "gallery": {
       "title": "Momentos de Nuestras Conferencias Nacionales",
       "santiago": "APC-ELI celebrando su 7ma Conferencia Nacional en la sede de Santiago de Cuba"
-    }
+    },
+    "tagline": "Hacia la excelencia en la enseñanza del idioma inglés",
+    "stats": "101 ponencias: 32 presenciales y 69 en línea",
+    "speakers": {
+      "title": "Conferencistas Principales",
+      "items": [
+        {
+          "name": "Halim Majeed",
+          "role": "Conferencista principal",
+          "detail": "Embajador de la República Cooperativa de Guyana.",
+          "photo": "/images/speakers/halim-majeed.jpg"
+        },
+        {
+          "name": "Dra. Catherine Walter",
+          "role": "Conferencista principal en línea",
+          "detail": "Experimentada autora de ELT y conferencista de IATEFL, y la primera mujer presidenta de IATEFL. Doctorada en la Universidad de Cambridge, imparte clases en la Universidad de Oxford y preside el English Language Advisory Group del British Council.",
+          "photo": "/images/speakers/catherine-walter.jpg"
+        }
+      ]
+    },
+    "themes": {
+      "title": "Temáticas de la Conferencia",
+      "items": [
+        "La enseñanza del inglés en cualquier nivel educativo: diseño de cursos y desarrollo curricular, elaboración de materiales, evaluación de la lengua",
+        "Uso de herramientas digitales en la enseñanza del inglés. Educación a distancia vs. clases presenciales",
+        "Inglés con Fines Específicos/Académicos",
+        "Inglés para niños",
+        "Evaluación del dominio del inglés de los profesionales",
+        "Formación y desarrollo de profesores de inglés",
+        "Nuevos temas de la IA en la enseñanza del inglés",
+        "Aspectos interculturales en el aprendizaje de lenguas extranjeras"
+      ]
+    },
+    "sponsor": "Patrocinada en parte por la filial de Brighton de la Cuba Solidarity Campaign"
   },
   "grants": {
     "title": "Proyectos y Talleres",
@@ -286,8 +319,29 @@
   "newsletters": {
     "title": "Boletines",
     "subtitle": "Manténgase informado con las últimas noticias, investigaciones y actualizaciones de APC-ELI",
-    "description": "Nuestro boletín trimestral mantiene a los miembros informados sobre próximos eventos, investigaciones recientes, oportunidades de desarrollo profesional y noticias organizacionales. Explore nuestro archivo a continuación.",
+    "description": "Nuestro boletín mantiene informados a los miembros sobre próximos eventos, oportunidades de desarrollo profesional, perfiles de miembros y noticias de la asociación. Descargue los últimos números a continuación.",
     "items": [
+      {
+        "title": "Boletín APC-ELI Vol. 4",
+        "month": "Octubre–Noviembre",
+        "year": "2026",
+        "pdf": "/pdfs/apc-eli-newsletter-2026-oct-nov.pdf",
+        "summary": "El taller English for Development en Matanzas, el webinar del Prof. Rob Williams sobre Identidad e Interculturalidad, la 4ta Conferencia en Línea de Asociados de IATEFL y los conferencistas principales de la 8va Conferencia Nacional."
+      },
+      {
+        "title": "Boletín APC-ELI Vol. 3",
+        "month": "Agosto–Septiembre",
+        "year": "2026",
+        "pdf": "/pdfs/apc-eli-newsletter-2026-aug-sep.pdf",
+        "summary": "El Mes Verde de junio por el Día Mundial del Medio Ambiente, el taller de actualización del Proyecto #InglésParaElDesarrollo en Matanzas, el perfil de un miembro y la segunda convocatoria a la 8va Conferencia Nacional."
+      },
+      {
+        "title": "Boletín APC-ELI Vol. 1",
+        "month": "Enero–Febrero",
+        "year": "2026",
+        "pdf": "/pdfs/apc-eli-newsletter-2026-jan-feb.pdf",
+        "summary": "Convocatoria a la 8va Conferencia Nacional de APC-ELI, el perfil de un miembro e imágenes del Mes Naranja y la Convención de GELI celebrados a finales de 2025."
+      },
       {
         "title": "Boletín APC-ELI",
         "month": "Junio",

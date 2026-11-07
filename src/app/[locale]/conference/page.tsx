@@ -4,7 +4,14 @@ import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { SectionHeader } from "@/components/shared/section-header";
 import { MotionWrapper, FadeIn } from "@/components/shared/motion-wrapper";
-import { Calendar, MapPin, Users } from "lucide-react";
+import { Calendar, MapPin, Users, Mic, CheckCircle, Handshake } from "lucide-react";
+
+interface Speaker {
+  name: string;
+  role: string;
+  detail: string;
+  photo: string;
+}
 
 interface PreviousEdition {
   year: string;
@@ -25,8 +32,11 @@ export default function ConferencePage() {
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
               {t("title")}
             </h1>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-6">
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-2">
               {t("subtitle")}
+            </p>
+            <p className="text-lg italic text-accent max-w-3xl mx-auto mb-6">
+              {t("tagline")}
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
               <div className="flex items-center gap-2 text-gray-300">
@@ -55,11 +65,67 @@ export default function ConferencePage() {
               <p className="text-muted text-lg leading-relaxed mb-6">
                 {t("participants.description")}
               </p>
-              <div className="inline-flex items-center gap-2 bg-accent/5 text-accent px-4 py-2 rounded-full text-sm font-medium">
-                <Users className="w-4 h-4" />
-                {t("participants.audience")}
+              <div className="flex flex-wrap justify-center gap-3">
+                <div className="inline-flex items-center gap-2 bg-accent/5 text-accent px-4 py-2 rounded-full text-sm font-medium">
+                  <Users className="w-4 h-4" />
+                  {t("participants.audience")}
+                </div>
+                <div className="inline-flex items-center gap-2 bg-accent/5 text-accent px-4 py-2 rounded-full text-sm font-medium">
+                  <Mic className="w-4 h-4" />
+                  {t("stats")}
+                </div>
               </div>
             </MotionWrapper>
+          </div>
+        </div>
+      </section>
+
+      <section className="pb-20 bg-white">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <SectionHeader title={t("speakers.title")} />
+          <div className="grid md:grid-cols-2 gap-6">
+            {(t.raw("speakers.items") as Speaker[]).map((sp, i) => (
+              <motion.div
+                key={sp.name}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className="bg-soft-gray rounded-2xl p-6 flex gap-5 items-start"
+              >
+                <img
+                  src={sp.photo}
+                  alt={sp.name}
+                  className="w-24 h-24 rounded-full object-cover object-top shrink-0 ring-4 ring-white"
+                  loading="lazy"
+                />
+                <div>
+                  <h3 className="font-heading text-xl text-navy-700">{sp.name}</h3>
+                  <p className="text-sm font-medium text-accent mb-2">{sp.role}</p>
+                  <p className="text-sm text-muted leading-relaxed">{sp.detail}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          <div className="mt-16">
+            <SectionHeader title={t("themes.title")} />
+            <div className="grid sm:grid-cols-2 gap-3">
+              {(t.raw("themes.items") as string[]).map((theme, i) => (
+                <div key={i} className="flex items-start gap-3 bg-white rounded-xl p-4 border border-gray-100 shadow-sm">
+                  <CheckCircle className="w-5 h-5 text-accent mt-0.5 shrink-0" />
+                  <span className="text-navy-700 text-sm">{theme}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4 text-center">
+            <img src="/images/partners/cuba-solidarity-campaign.png" alt="Cuba Solidarity Campaign" className="h-14 w-auto" loading="lazy" />
+            <p className="text-muted flex items-center gap-2">
+              <Handshake className="w-5 h-5 text-accent shrink-0" />
+              {t("sponsor")}
+            </p>
           </div>
         </div>
       </section>

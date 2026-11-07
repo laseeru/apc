@@ -52,7 +52,7 @@ export function ConferencePreview() {
                 loading="lazy"
               />
               <div className="absolute -top-4 -right-4 bg-accent text-white px-4 py-2 rounded-lg shadow-lg">
-                <span className="font-bold text-lg">VII</span>
+                <span className="font-bold text-lg">VIII</span>
                 <p className="text-xs">{t("edition")}</p>
               </div>
             </div>

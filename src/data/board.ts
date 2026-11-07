@@ -3,12 +3,14 @@ export interface BoardMember {
   role: string;
   institution: string;
   bio: string;
+  photo?: string;
 }
 
 export const boardData: Record<string, BoardMember[]> = {
   es: [
     {
       name: "E. Garbey Savigne, PhD",
+      photo: "/images/board/eduardo-garbey.jpg",
       role: "Presidente / Coordinador Nacional",
       institution: "Universidad de Ciencias Médicas de La Habana",
       bio: "Coordinador Nacional de APC-ELI. Ha representado a la asociación en conferencias anuales de IATEFL y otros eventos internacionales."
@@ -41,6 +43,7 @@ export const boardData: Record<string, BoardMember[]> = {
   en: [
     {
       name: "E. Garbey Savigne, PhD",
+      photo: "/images/board/eduardo-garbey.jpg",
       role: "Chairperson / National Coordinator",
       institution: "Havana Medical University",
       bio: "National Coordinator of APC-ELI. Has represented the association at IATEFL annual conferences and other international events."

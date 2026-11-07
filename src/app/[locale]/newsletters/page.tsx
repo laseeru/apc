@@ -27,13 +27,14 @@ export default function NewslettersPage() {
       <section className="py-20 bg-soft-gray">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {items.map((item: { title: string; month: string; year: string; summary: string }, i: number) => (
+            {items.map((item: { title: string; month: string; year: string; summary: string; pdf?: string }, i: number) => (
               <NewsletterCard
                 key={i}
                 title={item.title}
                 month={item.month}
                 year={item.year}
                 summary={item.summary}
+                pdf={item.pdf}
                 index={i}
               />
             ))}

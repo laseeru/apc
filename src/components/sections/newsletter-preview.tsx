@@ -7,32 +7,10 @@ import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n/navigation";
 import { ArrowRight } from "lucide-react";
 
-const newsletters = [
-  {
-    title: "APC-ELI Quarterly Review",
-    month: "May",
-    year: "2026",
-    summary:
-      "Conference announcements, grant recipient profiles, and a feature article on inclusive ELT practices.",
-  },
-  {
-    title: "APC-ELI Quarterly Review",
-    month: "February",
-    year: "2026",
-    summary:
-      "Workshop recaps, upcoming conference details, and research highlights from our members.",
-  },
-  {
-    title: "APC-ELI Quarterly Review",
-    month: "November",
-    year: "2025",
-    summary:
-      "Year-end review, member spotlight interviews, and calls for conference proposals.",
-  },
-];
-
 export function NewsletterPreview() {
   const t = useTranslations("newsletterPreview");
+  const newsletters: { title: string; month: string; year: string; summary: string; pdf?: string }[] =
+    useTranslations("newsletters").raw("items").slice(0, 3);
 
   return (
     <section className="py-20 bg-white">

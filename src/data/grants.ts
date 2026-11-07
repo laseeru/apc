@@ -134,11 +134,16 @@ export const grantsData: Record<string, {
       "Se consideran candidatos de todas las provincias"
     ],
     upcomingWorkshops: [
-      { title: "Webinars y Webcourses", date: "Durante todo el año", location: "Virtual", description: "Webinars y webcourses para profesores en ejercicio, trainees y estudiantes, facilitando la interacción con expertos internacionales." },
-      { title: "Festival del Idioma Inglés", date: "Anual", location: "Diferentes provincias", description: "Festival anual con actividades culturales y académicas para celebrar el idioma inglés. Se celebra en diferentes provincias." },
-      { title: "Concurso y Festivales Estudiantiles", date: "Durante el año", location: "Nacional", description: "Concursos y festivales para estudiantes, incluyendo actividades de desarrollo de habilidades del siglo XXI." }
+      { title: "El Mes Naranja", date: "Noviembre 2026", location: "En línea / Presencial", description: "Actividades para estudiantes y profesores." },
+      { title: "6ta Conferencia en Línea de Asociados de TESOL Spain", date: "27–28 de noviembre de 2026", location: "Zoom", description: "'Shared Visions, Singular Voices'. TESOL Spain, asociación hermana de APC-ELI, ha invitado a nuestra asociación a participar." },
+      { title: "British Week en Cuba", date: "Diciembre 2026", location: "Presencial, centros seleccionados", description: "Actividades abiertas al público general en centros seleccionados." },
+      { title: "8va Conferencia Nacional de APC-ELI", date: "10–11 de diciembre de 2026", location: "Híbrida, varias sedes", description: "Para profesores y estudiantes de pregrado de inglés, con 101 ponencias presenciales y en línea." }
     ],
     pastWorkshops: [
+      { title: "Taller científico-metodológico: Identidad e Interculturalidad", date: "22 de octubre de 2026", location: "Google Meet", description: "El Prof. Rob Williams compartió sus puntos de vista sobre el tema y respondió preguntas de los participantes." },
+      { title: "Taller English for Development", date: "Septiembre 2026", location: "Matanzas", description: "Segunda fase del programa Inglés para el Desarrollo, promovido por los ministerios de educación cubanos con el apoyo del British Council y financiamiento del Reino de los Países Bajos." },
+      { title: "Taller de actualización del Proyecto #InglésParaElDesarrollo", date: "Julio 2026", location: "Matanzas", description: "Desarrollado y patrocinado por el British Council." },
+      { title: "El Mes Verde: Día Mundial del Medio Ambiente", date: "Junio 2026", location: "La Habana y provincias", description: "Actividades lideradas por APC-ELI a solicitud del British Council Cuba." },
       { title: "Curso de Invierno", date: "Enero 2021", location: "Sede APC, La Habana", description: "Con la participación de Julia Simpkins (Escocia) como tallerista invitada." },
       { title: "National ELT Colloquium", date: "2021", location: "Virtual", description: "Webinar con Ken Wilson como orador principal: 'Reducing fear, increasing confidence'." },
       { title: "English Language Festival", date: "Diciembre 2021", location: "Virtual", description: "Con Joan Cutting (Escocia) liderando una sesión sobre interculturalidad Escocia-Cuba." },
@@ -216,11 +221,16 @@ export const grantsData: Record<string, {
       "Candidates from all provinces are considered"
     ],
     upcomingWorkshops: [
-      { title: "Webinars and Webcourses", date: "Year-round", location: "Virtual", description: "Webinars and webcourses for in-service teachers, trainees, and students, facilitating interaction with international experts." },
-      { title: "English Language Festival", date: "Annual", location: "Different provinces", description: "Annual festival with cultural and academic activities to celebrate the English language. Held in different provinces." },
-      { title: "Student Contests and Festivals", date: "Throughout the year", location: "National", description: "Contests and festivals for students, including 21st century skills development activities." }
+      { title: "The Orange Month", date: "November 2026", location: "Online / In person", description: "Activities for students and teachers." },
+      { title: "6th TESOL Spain Associates Online Conference", date: "November 27–28, 2026", location: "Zoom", description: "'Shared Visions, Singular Voices'. TESOL Spain, APC-ELI's partner teachers' association, has invited our association to take part." },
+      { title: "British Week in Cuba", date: "December 2026", location: "In person, selected centers", description: "Activities open to the general public at selected centers." },
+      { title: "8th APC-ELI National Conference", date: "December 10–11, 2026", location: "Hybrid, multiple venues", description: "For teachers and EFL undergraduates, with 101 in-person and online presentations." }
     ],
     pastWorkshops: [
+      { title: "Scientific and Methodological workshop: Identity and Interculturality", date: "October 22, 2026", location: "Google Meet", description: "Prof. Rob Williams shared his views on the topic and answered questions from the participants." },
+      { title: "English for Development workshop", date: "September 2026", location: "Matanzas", description: "Second phase of the English for Development programme, promoted by the Cuban ministries of Education with the support of the British Council and funding from the Kingdom of the Netherlands." },
+      { title: "#InglésParaElDesarrollo update workshop", date: "July 2026", location: "Matanzas", description: "Developed and fully sponsored by the British Council." },
+      { title: "The Green Month: World Environment Day", date: "June 2026", location: "Havana and provinces", description: "Activities led by APC-ELI at the request of the British Council Cuba." },
       { title: "Winter Course", date: "January 2021", location: "APC HQ, Havana", description: "With Julia Simpkins (Scotland) as guest workshop leader." },
       { title: "National ELT Colloquium", date: "2021", location: "Virtual", description: "Webinar with Ken Wilson as keynote speaker: 'Reducing fear, increasing confidence'." },
       { title: "English Language Festival", date: "December 2021", location: "Virtual", description: "With Joan Cutting (Scotland) leading a session on Scotland-Cuba interculturality." },

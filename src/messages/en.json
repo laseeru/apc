@@ -63,10 +63,10 @@
   },
   "conferencePreview": {
     "title": "National Conference",
-    "subtitle": "5th APC-ELI National Conference",
-    "date": "December 10-11, 2020",
-    "location": "Havana, Cuba",
-    "description": "Join educators and researchers from across Cuba and abroad for two days of keynote presentations, workshops, research papers, and networking opportunities.",
+    "subtitle": "8th APC-ELI National Conference",
+    "date": "December 10–11, 2026",
+    "location": "Havana, Villa Clara, Holguín, Santiago de Cuba, Guantánamo — and online",
+    "description": "A hybrid, multi-venue conference for teachers in primary, secondary and tertiary education, with 101 presentations — 32 in person and 69 online — and main speakers Ambassador Halim Majeed and Dr Catherine Walter.",
     "cta": "View Conference Details",
     "edition": "Edition"
   },
@@ -213,15 +213,15 @@
   },
   "conference": {
     "title": "National Conference",
-    "subtitle": "5th APC-ELI National Conference",
-    "date": "December 10-11, 2020",
-    "location": "Havana, Cuba",
-    "description": "The APC-ELI National Conference is the section's main event, bringing together English teachers from across the country. The 5th edition was held on December 10-11, 2020 in Havana, featuring presentations, interactive workshops, research papers, and networking opportunities. The event encourages participation from both presenters and non-presenters, with an emphasis on young teachers and undergraduate students.",
+    "subtitle": "8th APC-ELI National Conference",
+    "date": "December 10–11, 2026",
+    "location": "Havana, Villa Clara, Holguín, Santiago de Cuba, Guantánamo — and online",
+    "description": "The 8th Conference on English Language Teaching and Culture is a hybrid (online and in-person), multi-venue event. It is an opportunity for teachers working in primary, secondary or tertiary education to link up and share experiences and best practices from the ELT classroom. This edition is partly sponsored by the Brighton branch of the Cuba Solidarity Campaign.",
     "cta": "More Information",
     "participants": {
       "title": "Participation",
       "description": "Teachers from across the country, researchers, and undergraduate students attend the conference. Research papers, pedagogical experiences, and practical workshops on English language teaching are presented.",
-      "audience": "English teachers and professors, researchers, undergraduate students"
+      "audience": "Teachers and EFL undergraduates"
     },
     "previous": {
       "title": "Previous Editions",
@@ -244,7 +244,40 @@
     "gallery": {
       "title": "Moments from Our National Conferences",
       "santiago": "APC-ELI holding its 7th National Conference in the Santiago de Cuba venue"
-    }
+    },
+    "tagline": "Towards excellence in English Language Teaching",
+    "stats": "101 presentations: 32 in person and 69 online",
+    "speakers": {
+      "title": "Main Speakers",
+      "items": [
+        {
+          "name": "Halim Majeed",
+          "role": "Main Conference Speaker",
+          "detail": "Ambassador of the Co-operative Republic of Guyana.",
+          "photo": "/images/speakers/halim-majeed.jpg"
+        },
+        {
+          "name": "Dr Catherine Walter",
+          "role": "Main Online Speaker",
+          "detail": "Experienced ELT author and IATEFL conference speaker, and the first female president of IATEFL. With a PhD from the University of Cambridge, she lectures at the University of Oxford and chairs the British Council's English Language Advisory Group.",
+          "photo": "/images/speakers/catherine-walter.jpg"
+        }
+      ]
+    },
+    "themes": {
+      "title": "Conference Themes",
+      "items": [
+        "English Language Teaching at any educational level: course design and curriculum development, materials development, language assessment",
+        "Use of digital tools in ELT. Distance learning vs. face-to-face lessons",
+        "English for Specific/Academic Purposes",
+        "English for Young Learners",
+        "Testing and assessing professionals' proficiency in English",
+        "English Language Teacher Training and Development",
+        "New issues of AI in English Language Teaching",
+        "Intercultural issues in foreign language learning"
+      ]
+    },
+    "sponsor": "Partly sponsored by the Brighton branch of the Cuba Solidarity Campaign"
   },
   "grants": {
     "title": "Grants & Workshops",
@@ -286,8 +319,29 @@
   "newsletters": {
     "title": "Newsletters",
     "subtitle": "Stay informed with the latest news, research, and updates from APC-ELI",
-    "description": "Our quarterly newsletter keeps members informed about upcoming events, recent research, professional development opportunities, and organizational news. Browse our archive below.",
+    "description": "Our newsletter keeps members informed about upcoming events, professional development opportunities, member profiles, and news from the association. Download the latest issues below.",
     "items": [
+      {
+        "title": "APC-ELI Newsletter Vol. 4",
+        "month": "October–November",
+        "year": "2026",
+        "pdf": "/pdfs/apc-eli-newsletter-2026-oct-nov.pdf",
+        "summary": "The English for Development workshop in Matanzas, Prof. Rob Williams' webinar on Identity and Interculturality, the 4th IATEFL Associates Online Conference, and the main speakers of the 8th National Conference."
+      },
+      {
+        "title": "APC-ELI Newsletter Vol. 3",
+        "month": "August–September",
+        "year": "2026",
+        "pdf": "/pdfs/apc-eli-newsletter-2026-aug-sep.pdf",
+        "summary": "The June Green Month celebrating World Environment Day, the #InglésParaElDesarrollo update workshop in Matanzas, a member profile, and the second call for the 8th National Conference."
+      },
+      {
+        "title": "APC-ELI Newsletter Vol. 1",
+        "month": "January–February",
+        "year": "2026",
+        "pdf": "/pdfs/apc-eli-newsletter-2026-jan-feb.pdf",
+        "summary": "Call for proposals for the 8th APC-ELI National Conference, a member profile, and snapshots of the Orange Month and the GELI Convention held in late 2025."
+      },
       {
         "title": "APC-ELI Newsletter",
         "month": "June",

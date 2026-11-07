@@ -3,13 +3,13 @@
 import { motion } from "framer-motion";
 import { FileText, Download } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { Button } from "@/components/ui/button";
 
 interface NewsletterCardProps {
   title: string;
   month: string;
   year: string;
   summary: string;
+  pdf?: string;
   index?: number;
 }
 
@@ -18,6 +18,7 @@ export function NewsletterCard({
   month,
   year,
   summary,
+  pdf,
   index = 0,
 }: NewsletterCardProps) {
   const t = useTranslations("common");
@@ -41,10 +42,16 @@ export function NewsletterCard({
       </div>
       <h3 className="text-lg font-semibold text-navy-700 mb-2">{title}</h3>
       <p className="text-muted text-sm leading-relaxed mb-4">{summary}</p>
-      <Button variant="outline" size="sm" className="gap-2">
-        <Download className="w-4 h-4" />
-        {t("downloadPdf")}
-      </Button>
+      {pdf && (
+        <a
+          href={pdf}
+          download
+          className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-medium border border-gray-300 text-navy-700 hover:bg-navy-50 transition-colors"
+        >
+          <Download className="w-4 h-4" />
+          {t("downloadPdf")}
+        </a>
+      )}
     </motion.div>
   );
 }

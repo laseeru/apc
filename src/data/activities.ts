@@ -7,6 +7,16 @@ export interface ActivityItem {
 export const activitiesData: Record<string, ActivityItem[]> = {
   es: [
     {
+      title: "Día Mundial del Medio Ambiente: El Mes Verde",
+      description: "En junio de 2026 el British Council Cuba solicitó a APC-ELI liderar una serie de eventos para celebrar el Día Mundial del Medio Ambiente como parte del Mes Verde. En La Habana, la celebración junto al Museo Nacional de Historia Natural estuvo a cargo de la representante de APC-ELI en La Habana y la Universidad de Ciencias Pedagógicas Enrique José Varona, con estudiantes presentando proyectos sobre el medio ambiente. Los representantes de APC-ELI en Matanzas, Santiago de Cuba, Villa Clara y Guantánamo — donde Carlos Ning desarrolló actividades en zonas rurales y remotas — también organizaron sus propias actividades.",
+      image: "/images/environment/havana-04.jpg"
+    },
+    {
+      title: "Talleres #InglésParaElDesarrollo",
+      description: "Talleres del programa Inglés para el Desarrollo, promovido por los ministerios de educación cubanos con el apoyo del British Council y financiamiento del Reino de los Países Bajos, como el taller de actualización celebrado en Matanzas en julio de 2026 y el taller de septiembre de 2026, con asesores metodológicos y líderes de la enseñanza del inglés.",
+      image: "/images/newsletter/ipd-workshop-61.jpg"
+    },
+    {
       title: "Webinars con Expertos Internacionales",
       description: "APC-ELI organiza webinars con expertos internacionales de renombre como Ken Wilson (autor de más de 30 títulos ELT), Jeremy Harmer (autor de The Practice of English Language Teaching), Hugh Dellar (co-fundador de Lexical Lab), Carol Harvey (coach de comunicación en inglés), la Prof. Venice Irving y Rob Williams.",
       image: "/images/activities/webinar-rob-williams.jpg"
@@ -38,6 +48,16 @@ export const activitiesData: Record<string, ActivityItem[]> = {
     }
   ],
   en: [
+    {
+      title: "World Environment Day: The Green Month",
+      description: "In June 2026 the British Council Cuba asked APC-ELI to lead a series of events celebrating World Environment Day as part of the Green Month. In Havana, the celebration next to the National Museum of Natural History was led by the APC-ELI Havana representative and the Enrique José Varona University of Pedagogical Sciences, with students presenting environmental projects. APC-ELI representatives in Matanzas, Santiago de Cuba, Villa Clara and Guantánamo — where Carlos Ning held activities in remote rural areas — also organized their own activities.",
+      image: "/images/environment/havana-04.jpg"
+    },
+    {
+      title: "#InglésParaElDesarrollo Workshops",
+      description: "Workshops of the English for Development programme, promoted by the Cuban ministries of Education with the support of the British Council and funding from the Kingdom of the Netherlands, including the update workshop held in Matanzas in July 2026 and the September 2026 workshop, with methodological advisors and ELT leaders.",
+      image: "/images/newsletter/ipd-workshop-61.jpg"
+    },
     {
       title: "Webinars with International Experts",
       description: "APC-ELI organizes webinars with renowned international experts such as Ken Wilson (author of over 30 ELT titles), Jeremy Harmer (author of The Practice of English Language Teaching), Hugh Dellar (co-founder of Lexical Lab), Carol Harvey (English communication coach), Prof. Venice Irving, and Rob Williams.",

@@ -35,6 +35,7 @@ export default function BoardPage() {
                 role={member.role}
                 institution={member.institution}
                 bio={member.bio}
+                photo={member.photo}
                 index={i}
               />
             ))}
