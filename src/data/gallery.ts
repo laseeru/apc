@@ -5,6 +5,22 @@ export interface GalleryItem {
 }
 
 export const galleryItems: GalleryItem[] = [
+  { src: "/images/iatefl/brighton-2026-01.jpg", cat: "international", title: { es: "Líderes de APC-ELI en la conferencia IATEFL Brighton 2026", en: "APC-ELI leaders at the IATEFL Brighton 2026 conference" } },
+  { src: "/images/iatefl/brighton-2026-02.jpg", cat: "international", title: { es: "Líderes de APC-ELI en la conferencia IATEFL Brighton 2026", en: "APC-ELI leaders at the IATEFL Brighton 2026 conference" } },
+  { src: "/images/iatefl/brighton-2026-03.jpg", cat: "international", title: { es: "Líderes de APC-ELI en la conferencia IATEFL Brighton 2026", en: "APC-ELI leaders at the IATEFL Brighton 2026 conference" } },
+  { src: "/images/iatefl/brighton-2026-04.jpg", cat: "international", title: { es: "Líderes de APC-ELI en la conferencia IATEFL Brighton 2026", en: "APC-ELI leaders at the IATEFL Brighton 2026 conference" } },
+  { src: "/images/iatefl/brighton-2026-05.jpg", cat: "international", title: { es: "Líderes de APC-ELI en la conferencia IATEFL Brighton 2026", en: "APC-ELI leaders at the IATEFL Brighton 2026 conference" } },
+  { src: "/images/iatefl/brighton-2026-06.jpg", cat: "international", title: { es: "Líderes de APC-ELI en la conferencia IATEFL Brighton 2026", en: "APC-ELI leaders at the IATEFL Brighton 2026 conference" } },
+  { src: "/images/iatefl/brighton-2026-07.jpg", cat: "international", title: { es: "Líderes de APC-ELI en la conferencia IATEFL Brighton 2026", en: "APC-ELI leaders at the IATEFL Brighton 2026 conference" } },
+  { src: "/images/iatefl/brighton-2026-08.jpg", cat: "international", title: { es: "Líderes de APC-ELI en la conferencia IATEFL Brighton 2026", en: "APC-ELI leaders at the IATEFL Brighton 2026 conference" } },
+  { src: "/images/iatefl/brighton-2026-09.jpg", cat: "international", title: { es: "Líderes de APC-ELI en la conferencia IATEFL Brighton 2026", en: "APC-ELI leaders at the IATEFL Brighton 2026 conference" } },
+  { src: "/images/iatefl/brighton-2026-10.jpg", cat: "international", title: { es: "Líderes de APC-ELI en la conferencia IATEFL Brighton 2026", en: "APC-ELI leaders at the IATEFL Brighton 2026 conference" } },
+  { src: "/images/dreamers/dreamers-colloquium-01.jpg", cat: "conferences", title: { es: "Segundo Coloquio Dreamers en Pabellón Cuba, mayo de 2026", en: "Second Dreamers Colloquium at Pabellón Cuba, May 2026" } },
+  { src: "/images/dreamers/dreamers-colloquium-02.jpg", cat: "conferences", title: { es: "Segundo Coloquio Dreamers en Pabellón Cuba, mayo de 2026", en: "Second Dreamers Colloquium at Pabellón Cuba, May 2026" } },
+  { src: "/images/dreamers/dreamers-colloquium-03.jpg", cat: "conferences", title: { es: "Segundo Coloquio Dreamers en Pabellón Cuba, mayo de 2026", en: "Second Dreamers Colloquium at Pabellón Cuba, May 2026" } },
+  { src: "/images/dreamers/dreamers-colloquium-04.jpg", cat: "conferences", title: { es: "Segundo Coloquio Dreamers en Pabellón Cuba, mayo de 2026", en: "Second Dreamers Colloquium at Pabellón Cuba, May 2026" } },
+  { src: "/images/dreamers/dreamers-colloquium-05.jpg", cat: "conferences", title: { es: "Segundo Coloquio Dreamers en Pabellón Cuba, mayo de 2026", en: "Second Dreamers Colloquium at Pabellón Cuba, May 2026" } },
+  { src: "/images/dreamers/dreamers-colloquium-06.jpg", cat: "conferences", title: { es: "Segundo Coloquio Dreamers en Pabellón Cuba, mayo de 2026", en: "Second Dreamers Colloquium at Pabellón Cuba, May 2026" } },
   { src: "/images/environment/havana-01.jpg", cat: "community", title: { es: "Día Mundial del Medio Ambiente en La Habana, junto al Museo Nacional de Historia Natural", en: "World Environment Day in Havana, next to the National Museum of Natural History" } },
   { src: "/images/environment/havana-02.jpg", cat: "community", title: { es: "Día Mundial del Medio Ambiente en La Habana, junto al Museo Nacional de Historia Natural", en: "World Environment Day in Havana, next to the National Museum of Natural History" } },
   { src: "/images/environment/havana-03.jpg", cat: "community", title: { es: "Día Mundial del Medio Ambiente en La Habana, junto al Museo Nacional de Historia Natural", en: "World Environment Day in Havana, next to the National Museum of Natural History" } },
